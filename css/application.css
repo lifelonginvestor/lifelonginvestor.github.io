@@ -1,0 +1,48 @@
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  font-family: fa5-proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px
+}
+
+@media screen and (min-width: 30em) {
+  html {
+    font-size: 16px
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  html {
+    font-size: 16px
+  }
+}
+
+@media screen and (min-width: 60em) {
+  html {
+    font-size: 16px
+  }
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit
+}
+
+.sans-serif {
+  font-family: fa5-proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+.serif {
+  font-family: museo-slab, "Museo Slab", Georgia, "Times New Roman", Times, serif
+}
+
+.mono, code, .code, pre {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+.system-sans-serif {
+  font-family: sans-serif
+}
+
+.system-serif {
+  font-family: serif
+}
