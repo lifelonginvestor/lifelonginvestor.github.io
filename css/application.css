@@ -48,11 +48,5 @@ html {
 }
 
 .box {
-  width: 450px;
-  height: 400px;
-  position: fixed;
-  margin-left: -225px; /* half of width */
-  margin-top: -200px; /* half of height */
-  top: 50%;
-  left: 50%;
+  margin-left: 20px;
 }
