@@ -1,2 +1,2 @@
-# lifetimeinvestment.github.io
-Lifetime Investment Website
+# lifelonginvestment.github.io
+Lifelong Investor Website
