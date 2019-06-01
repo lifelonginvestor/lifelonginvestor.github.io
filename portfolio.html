@@ -18,9 +18,11 @@
 </head>
 <body>
   <h1 align="center">Lifelong Adjusting Portfolio</h1>
-  <h2 align="center">Recommand in your 40s with a middle or upper class income, updated on 5/25/2019.</h2>
-  <h1>Security Bucket / Low Risk (20% of Total Asset)</h1>
-  <h1>Growth Bucket / Mid Risk (75% of Total Asset)</h1>
+  <h2 align="center">A kinda aggressive portfolio in your 40s with a middle or upper class income, updated on 6/1/2019.</h2>
+  <h1 class="bucket">
+    <span>Security Bucket / Low Risk (25% of Total Asset)</span>&nbsp;<span class="note">[Favor long-term, high-yield, tax-exempt
+      fixed-incomes: treasuries, bonds or loans. Also help to hedge stock markets.]</span>
+  </h1>
   <table class="portfolio">
     <thead>
       <tr>
@@ -28,15 +30,13 @@
         <th>Asset Category</th>
         <th>Asset Symbol</th>
         <th>Asset Name</th>
-        <th title="These are costs the investor pays through a reduction in the investment's rate of return.">Expense
-          Ratio</th>
+        <th title="These are costs the investor pays through a reduction in the investment's rate of return.">Expense Ratio</th>
         <th
           title="A low turnover ratio reflect a buy-and-hold investment strategy; those with high turnover ratios indicate an attempt to profit by a market-timing approach.">Turnover
           Rate</th>
-        <th
-          title="A higher standard deviation indicates a wider dispersion of past returns and thus greater historical volatility.">Standard
-          Deviation</th>
         <th title="The higher the ratio, the better the fund's return per unit of risk.">Sharpe Ratio</th>
+        <th title="A higher standard deviation indicates a wider dispersion of past returns and thus greater historical volatility.">Standard
+          Deviation</th>
         <th title="Average Annual Total Returns (cumulative)">Annual Returns</th>
         <th title="Overall Morningstar Rating">Overall Rating</th>
         <th title="Allocated percentage in this bucket">Bucket Weight</th>
@@ -46,58 +46,176 @@
     </thead>
     <tbody>
       <tr>
-        <td class="class" colspan="12" title="Asset Class">U.S. Real Estate Equities (20% of Growth Bucket)</td>
+        <td class="class" colspan="13" title="Asset Class">U.S. Total Bonds (5% of Security Bucket)</td>
       </tr>
       <tr>
+        <td title="Asset Type">Index Fund</td>
+        <td title="Asset Category">Intermediate Core Bond</td>
+        <td title="Asset Symbol">FXNAX</td>
+        <td title="Asset Name">Fidelity® U.S. Bond Index Fund</td>
+        <td title="Expense Ratio">0.025%</td>
+        <td title="Turnover Rate">36%</td>
+        <td title="Sharpe Ratio">0.19</td>
+        <td title="Standard Deviation">3.05</td>
+        <td title="Annual Return">YTD/1/3/5 Yrs: 4.75%/6.59%/2.44%/2.67%</td>
+        <td title="Overall Rating">4 stars</td>
+        <td title="Bucket Weight">0%</td>
+        <td title="Objective">Seeks to provide investment results that correspond to the aggregate price and interest performance of the debt
+          securities in the Bloomberg Barclays U.S. Aggregate Bond Index.</td>
+        <td title="Comment">Very low expense ratio and average turnover ratio, with much less volatility, use it as baseline.</td>
+      </tr>
+      <tr class="hold">
+        <td title="Asset Type">Index Fund</td>
+        <td title="Asset Category">Long-Term Core Bond</td>
+        <td title="Asset Symbol">VBLAX</td>
+        <td title="Asset Name">Vanguard Long-Term Bond Index Fund Admiral Shares</td>
+        <td title="Expense Ratio">0.07%</td>
+        <td title="Turnover Rate">N/A</td>
+        <td title="Sharpe Ratio">N/A</td>
+        <td title="Standard Deviation">N/A</td>
+        <td title="Annual Return">YTD/1/3/5 Yrs: null/null/null/null</td>
+        <td title="Overall Rating">null</td>
+        <td title="Bucket Weight">5%</td>
+        <td title="Objective">Offers a low-cost, diversified approach to bond investing, invests about 60% of assets in corporate bonds and 40%
+          in U.S. government bonds within maturities of more than ten years.</td>
+        <td title="Comment">A new mixed bond fund from Vanguard, a reasonable choice for the U.S. total bond market.</td>
+      </tr>
+      <tr>
+        <td class="class" colspan="13" title="Asset Class">U.S. Government Bonds (20% of Security Bucket)</td>
+      </tr>
+      <tr>
+        <td title="Asset Type">Index Fund</td>
+        <td title="Asset Category">Long Government</td>
+        <td title="Asset Symbol/Ticker">FNBGX</td>
+        <td title="Asset Name">Fidelity® Long-Term Treasury Bond Index Fund</td>
+        <td title="Expense Ratio">0.03%</td>
+        <td title="Turnover Rate">34%</td>
+        <td title="Sharpe Ratio">-0.02</td>
+        <td title="Standard Deviation">9.80</td>
+        <td title="Annual Return">YTD/1/3/5 Yrs: 9.58%/11.79%/2.97%/5.37%</td>
+        <td title="Overall Rating">3 stars</td>
+        <td title="Bucket Weight">0%</td>
+        <td title="Objective">Seeks to track the performance of a market-weighted government bond index with a long-term dollar-weighted average
+          maturity.</td>
+        <td title="Comment">Very low expense ratio and long-term government bond, with good return but high volatility.</td>
+      </tr>
+      <tr class="hold">
+        <td title="Asset Type">Index Fund</td>
+        <td title="Asset Category">High Yield Muni</td>
+        <td title="Asset Symbol/Ticker">VWALX</td>
+        <td title="Asset Name">Vanguard High-Yield Tax-Exempt Fund Admiral Shares</td>
+        <td title="Expense Ratio">0.09%</td>
+        <td title="Turnover Rate">N/A</td>
+        <td title="Sharpe Ratio (1Yr)">2.35*</td>
+        <td title="Standard Deviation (1Yr)">1.52*</td>
+        <td title="Annual Return (Tax-Exempt)">YTD/1/3/5 Yrs: 5.74%/7.18%/4.07%/4.76%</td>
+        <td title="Overall Rating">5 stars*</td>
+        <td title="Bucket Weight">20%</td>
+        <td title="Objective">Seek a high and sustainable level of current income that is exempt from federal personal income taxes by investing
+          in investment-grade municipal bonds, as determined by a nationally recognized statistical rating organization.</td>
+        <td title="Comment">Matches above investing criteria perfectly, steady growth, ideal choice!</td>
+      </tr>
+      <tr>
+        <td class="class" colspan="15" title="Asset Class">U.S. Personal Loans (0% of Security Bucket)</td>
+      </tr>
+      <tr>
+        <td title="Asset Type">P2P Loan</td>
+        <td title="Asset Category">Personal Loan</td>
+        <td title="Asset Symbol/Ticker">LC</td>
+        <td title="Asset Name">LendingClub.com</td>
+        <td title="Expense Ratio">1%</td>
+        <td title="Turnover Rate">N/A</td>
+        <td title="Sharpe Ratio">N/A</td>
+        <td title="Net Return">4%-8%</td>
+        <td title="Annual Return">14%(Interest) - 8%(Default) - 1%(Fees) = 5%</td>
+        <td title="Overall Rating">4 stars*</td>
+        <td title="Bucket Weight">0%</td>
+        <td title="Objective">Uses technology to operate its online credit marketplace at a lower cost than traditional lending programs, passing
+          the savings on to borrowers in the form of lower rates, and offering investors the potential for competitive returns.</td>
+        <td title="Comment">Need to take more risk with P2P lending, but certainly another reasonable option to diversify portfolio.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h1 class="bucket">
+    <span>Growth Bucket / Mid Risk (70% of Total Asset)</span>&nbsp;<span class="note">[All in diversified index funds or ETFs, with persistent
+      saving, investing and rebalancing on a quartly basis.]</span>
+  </h1>
+  <table class="portfolio">
+    <thead>
+      <tr>
+        <th>Asset Type</th>
+        <th>Asset Category</th>
+        <th>Asset Symbol</th>
+        <th>Asset Name</th>
+        <th title="These are costs the investor pays through a reduction in the investment's rate of return.">Expense Ratio</th>
+        <th
+          title="A low turnover ratio reflect a buy-and-hold investment strategy; those with high turnover ratios indicate an attempt to profit by a market-timing approach.">Turnover
+          Rate</th>
+        <th title="The higher the ratio, the better the fund's return per unit of risk.">Sharpe Ratio</th>
+        <th title="A higher standard deviation indicates a wider dispersion of past returns and thus greater historical volatility.">Standard
+          Deviation</th>
+        <th title="Average Annual Total Returns (cumulative)">Annual Returns</th>
+        <th title="Overall Morningstar Rating">Overall Rating</th>
+        <th title="Allocated percentage in this bucket">Bucket Weight</th>
+        <th title="Fund Overview">Objective</th>
+        <th title="Commentary">Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="class" colspan="13" title="Asset Class">U.S. Real Estate Equities (20% of Growth Bucket)</td>
+      </tr>
+      <tr class="hold">
         <td title="Asset Type">Index Fund</td>
         <td title="Asset Category">Real Estate</td>
         <td title="Asset Symbol/Ticker">FRESX</td>
         <td title="Asset Name">Fidelity® Real Estate Investment Portfolio</td>
         <td title="Expense Ratio">0.76%</td>
         <td title="Turnover Rate">15%</td>
-        <td title="Standard Deviation">13.21</td>
         <td title="Sharpe Ratio">0.42</td>
-        <td title="Annual Return">YTD/1/3/5 Yrs: 17.81%/18.00%/6.83%/8.73%</td>
+        <td title="Standard Deviation">13.21</td>
+        <td title="Annual Return">YTD/1/3/5 Yrs: 15.94%/13.84%/5.86%/8.17%</td>
         <td title="Overall Rating">4 stars</td>
-        <td title="Bucket Weight">0%</td>
-        <td title="Objective">Seeks above-average income and long-term capital growth, consistent with reasonable
-          investment risk. To provide a yield that exceeds the composite yield of the S&P 500 Index.</td>
-        <td title="Comment">Higher expense ratio and turnover ratio, but better return.</td>
+        <td title="Bucket Weight">5%</td>
+        <td title="Objective">Seeks above-average income and long-term capital growth, consistent with reasonable investment risk. To provide a
+          yield that exceeds the composite yield of the S&P 500 Index.</td>
+        <td title="Comment">Higher expense ratio and turnover ratio, but with nice return, consider it!</td>
       </tr>
-      <tr>
+      <tr class="hold">
         <td title="Asset Type">Index Fund</td>
         <td title="Asset Category">Real Estate</td>
         <td title="Asset Symbol">FSRNX</td>
         <td title="Asset Name">Fidelity® Real Estate Index Fund</td>
         <td title="Expense Ratio">0.07%</td>
         <td title="Turnover Rate">10%</td>
-        <td title="Standard Deviation">13.56</td>
         <td title="Sharpe Ratio">0.37</td>
-        <td title="Annual Return">YTD/1/3/5 Yrs: 17.26%/17.60%/6.24%/8.04%</td>
+        <td title="Standard Deviation">13.56</td>
+        <td title="Annual Return">YTD/1/3/5 Yrs: 15.09%/12.83%/5.43%/7.46%</td>
         <td title="Overall Rating">3 stars</td>
-        <td title="Bucket Weight">0%</td>
-        <td title="Objective">Seeks to provide investment results that correspond to the total return of equity
-          REITs and other real estate-related investments.</td>
-        <td title="Comment">Lowest expense ratio and turnover rate.</td>
+        <td title="Bucket Weight">15%</td>
+        <td title="Objective">Seeks to provide investment results that correspond to the total return of equity REITs and other real
+          estate-related investments.</td>
+        <td title="Comment">Relatively new, lowest expense ratio and turnover rate comparing to VGSLX, also with good return, first choice for
+          auto-reinvesting.</td>
       </tr>
-      <tr class="hold">
+      <tr>
         <td title="Asset Type">Index ETF</td>
         <td title="Asset Category">Real Estate</td>
         <td title="Asset Symbol">FREL</td>
         <td title="Asset Name">FIDELITY MSCI REAL ESTATE INDEX ETF</td>
         <td title="Expense Ratio">0.08%</td>
         <td title="Turnover Rate">8%</td>
-        <td title="Standard Deviation">1/3/5 Yrs: 14.41/13.49/null</td>
         <td title="Sharpe Ratio">1/3/5 Yrs: 1.13/0.52/null</td>
-        <td title="Annual Return">YTD/1/3/5 Yrs: 18.79%/18.66%/8.32%/null</td>
+        <td title="Standard Deviation">1/3/5 Yrs: 14.49/13.39/null</td>
+        <td title="Annual Return">YTD/1/3/5 Yrs: 17.22%/14.84%/7.54%/null</td>
         <td title="Overall Rating">4 stars</td>
-        <td title="Bucket Weight">20%</td>
-        <td title="Objective">Seeks to provide investment returns that correspond, before fees and expenses,
-          generally to the performance of the MSCI USA IMI Real Estate Index.</td>
-        <td title="Comment">Lowest expense ratio, more tax-efficient, first choice!</td>
+        <td title="Bucket Weight">0%</td>
+        <td title="Objective">Seeks to provide investment returns that correspond, before fees and expenses, generally to the performance of the
+          MSCI USA IMI Real Estate Index.</td>
+        <td title="Comment">Equals to above FSRNX, choose this one if not mind trading back and forth.</td>
       </tr>
       <tr>
-        <td class="class" colspan="12" title="Asset Class">U.S. Stock Market (50% of Growth Bucket)</td>
+        <td class="class" colspan="13" title="Asset Class">U.S. Stock Market (50% of Growth Bucket)</td>
       </tr>
       <tr>
         <td title="Asset Type">Index Fund</td>
@@ -106,14 +224,14 @@
         <td title="Asset Name">Fidelity® 500 Index Fund</td>
         <td title="Expense Ratio">0.015%</td>
         <td title="Turnover Rate">4%</td>
-        <td title="Standard Deviation">10.86</td>
         <td title="Sharpe Ratio">1.26</td>
+        <td title="Standard Deviation">10.86</td>
         <td title="Annual Return">YTD/1/3/5 Yrs: 13.68%/13.48%/14.86%/11.62%</td>
         <td title="Overall Rating">5 stars</td>
         <td title="Bucket Weight">0%</td>
-        <td title="Objective">Seeks to provide investment results that correspond to the total return (i.e., the
-          combination of capital changes and income) performance of common stocks publicly traded in the United States.</td>
-        <td title="Comment">Very lowest expense ratio and turnover rate, ideal for long-term and easy investment.</td>
+        <td title="Objective">Seeks to provide investment results that correspond to the total return (i.e., the combination of capital changes
+          and income) performance of common stocks publicly traded in the United States.</td>
+        <td title="Comment">Very low expense ratio and turnover rate, ideal for long-term and easy investment.</td>
       </tr>
       <tr class="hold">
         <td title="Asset Type">Index Fund</td>
@@ -122,15 +240,14 @@
         <td title="Asset Name">Fidelity ZERO SM Large Cap Index Fund</td>
         <td title="Expense Ratio">0.00%</td>
         <td title="Turnover Rate">1%</td>
-        <td title="Standard Deviation">N/A</td>
         <td title="Sharpe Ratio">N/A</td>
+        <td title="Standard Deviation">N/A</td>
         <td title="Annual Return">YTD/1/3/5 Yrs: 13.79%/null/null/null</td>
         <td title="Overall Rating">N/A</td>
         <td title="Bucket Weight">30%</td>
-        <td title="Objective">Seeks to provide investment results that correspond to the total return of stocks of
-          large-capitalization U.S. companies.</td>
-        <td title="Comment">New zero expense Fidelity mutual fund, projecting even better performance than FXAIX,
-          first choice!</td>
+        <td title="Objective">Seeks to provide investment results that correspond to the total return of stocks of large-capitalization U.S.
+          companies.</td>
+        <td title="Comment">New zero expense Fidelity mutual fund, projecting even better performance than FXAIX, first choice!</td>
       </tr>
       <tr>
         <td title="Asset Type">Index Fund</td>
@@ -139,15 +256,13 @@
         <td title="Asset Name">Fidelity ZERO SM Total Market Index Fund</td>
         <td title="Expense Ratio">0.00%</td>
         <td title="Turnover Rate">0%</td>
-        <td title="Standard Deviation">N/A</td>
         <td title="Sharpe Ratio">N/A</td>
+        <td title="Standard Deviation">N/A</td>
         <td title="Annual Return">YTD/1/3/5 Yrs: 13.78%/null/null/null</td>
         <td title="Overall Rating">N/A</td>
         <td title="Bucket Weight">0%</td>
-        <td title="Objective">Seeks to provide investment results that correspond to the total return of a broad
-          range of U.S. stocks.</td>
-        <td title="Comment">New zero expense Fidelity mutual fund, projecting even better performance than FXAIX,
-          first choice!</td>
+        <td title="Objective">Seeks to provide investment results that correspond to the total return of a broad range of U.S. stocks.</td>
+        <td title="Comment">New zero expense Fidelity mutual fund, projecting even better performance than FXAIX, first choice!</td>
       </tr>
       <tr>
         <td title="Asset Type">Index Fund</td>
@@ -156,15 +271,14 @@
         <td title="Asset Name">Fidelity ZERO SM Extended Market Index Fund</td>
         <td title="Expense Ratio">0.00%</td>
         <td title="Turnover Rate">0%</td>
-        <td title="Standard Deviation">N/A</td>
         <td title="Sharpe Ratio">N/A</td>
+        <td title="Standard Deviation">N/A</td>
         <td title="Annual Return">YTD/1/3/5 Yrs: 13.41%/null/null/null</td>
         <td title="Overall Rating">N/A</td>
         <td title="Bucket Weight">0%</td>
-        <td title="Objective">Seeks to provide investment results that correspond to the total return of stocks of
-          mid- to small-capitalization U.S. companies.</td>
-        <td title="Comment">Compare to above large-cap zero expense Fidelity mutual fund, not much advantage for
-          now.</td>
+        <td title="Objective">Seeks to provide investment results that correspond to the total return of stocks of mid- to small-capitalization
+          U.S. companies.</td>
+        <td title="Comment">Compare to above large-cap zero expense Fidelity mutual fund, not much advantage for now.</td>
       </tr>
       <tr>
         <td title="Asset Type">Index Fund</td>
@@ -173,15 +287,14 @@
         <td title="Asset Name">Fidelity® Nasdaq® Composite Index Fund</td>
         <td title="Expense Ratio">0.3%</td>
         <td title="Turnover Rate">15%</td>
-        <td title="Standard Deviation">13.32</td>
         <td title="Sharpe Ratio">1.43</td>
+        <td title="Standard Deviation">13.32</td>
         <td title="Annual Return">YTD/1/3/5 Yrs: 15.66%/15.72%/20.30%/15.63%</td>
         <td title="Overall Rating">5 stars</td>
         <td title="Bucket Weight">0%</td>
-        <td title="Objective">Seeks to provide investment returns that closely correspond to the price and yield
-          performance of the NASDAQ Composite Index.</td>
-        <td title="Comment">Kind of low expense ratio and turnover rate, ideal for long-term and easy investment
-          for growth.</td>
+        <td title="Objective">Seeks to provide investment returns that closely correspond to the price and yield performance of the NASDAQ
+          Composite Index.</td>
+        <td title="Comment">Kind of low expense ratio and turnover rate, ideal for long-term and easy investment for growth.</td>
       </tr>
       <tr class="hold">
         <td title="Asset Type">Index ETF</td>
@@ -190,18 +303,17 @@
         <td title="Asset Name">FIDELITY NASDAQ COMPOSITE INDEX</td>
         <td title="Expense Ratio">0.21%</td>
         <td title="Turnover Rate">10%</td>
-        <td title="Standard Deviation">1/3/5 Yrs: 18.93/15.37/15.70</td>
         <td title="Sharpe Ratio">1/3/5 Yrs: 0.72/1.25/0.95</td>
+        <td title="Standard Deviation">1/3/5 Yrs: 18.93/15.37/15.70</td>
         <td title="Annual Return">YTD/1/3/5 Yrs: 15.78%/15.89%/20.39%/15.70%</td>
         <td title="Overall Rating">5 stars</td>
         <td title="Bucket Weight">20%</td>
-        <td title="Objective">Seeks to provide investment returns that closely correspond to the price and yield
-          performance of the Nasdaq Composite Index.</td>
-        <td title="Comment">Simliar nature with above FNCMX, but with lower expense ratio and more tax-efficient,
-          first choice!</td>
+        <td title="Objective">Seeks to provide investment returns that closely correspond to the price and yield performance of the Nasdaq
+          Composite Index.</td>
+        <td title="Comment">Simliar nature with above FNCMX, but with lower expense ratio and more tax-efficient, first choice!</td>
       </tr>
       <tr>
-        <td class="class" colspan="12" title="Asset Class">International Stock Markets (30% of Growth Bucket)</td>
+        <td class="class" colspan="13" title="Asset Class">International Stock Markets (30% of Growth Bucket)</td>
       </tr>
       <tr class="hold">
         <td title="Asset Type">Index Fund</td>
@@ -210,13 +322,13 @@
         <td title="Asset Name">Fidelity ZERO SM International Index Fund</td>
         <td title="Expense Ratio">0.00%</td>
         <td title="Turnover Rate">0%</td>
-        <td title="Standard Deviation">N/A</td>
         <td title="Sharpe Ratio">N/A</td>
+        <td title="Standard Deviation">N/A</td>
         <td title="Annual Return">YTD/1/3/5 Yrs: 8.32%/null/null/null</td>
         <td title="Overall Rating">N/A</td>
         <td title="Bucket Weight">30%</td>
-        <td title="Objective">Seeks to provide investment results that correspond to the total return of foreign
-          developed and emerging stock markets.</td>
+        <td title="Objective">Seeks to provide investment results that correspond to the total return of foreign developed and emerging stock
+          markets.</td>
         <td title="Comment">New zero expense Fidelity mutual fund focusing on international markets.</td>
       </tr>
       <tr class="">
@@ -226,19 +338,21 @@
         <td title="Asset Name">ISHARES MSCI CHINA A ETF</td>
         <td title="Expense Ratio">0.65%</td>
         <td title="Turnover Rate">154%</td>
-        <td title="Standard Deviation">1 Yrs: 26.00</td>
         <td title="Sharpe Ratio">1 Yrs: -0.11%</td>
+        <td title="Standard Deviation">1 Yrs: 26.00</td>
         <td title="Annual Return">YTD/1/3/5 Yrs: 8.32%/0.84%/null/null</td>
         <td title="Overall Rating">None</td>
         <td title="Bucket Weight">0%</td>
-        <td title="Objective">Seeks to track the investment results of the MSCI China A Inclusion Index composed of
-          domestic Chinese equities that trade on the Shanghai or Shenzhen Stock Exchange.</td>
-        <td title="Comment">Focus on China market, but with high expense ratio and crazy turnover rate, DO NOT
-          touch yet!</td>
+        <td title="Objective">Seeks to track the investment results of the MSCI China A Inclusion Index composed of domestic Chinese equities
+          that trade on the Shanghai or Shenzhen Stock Exchange.</td>
+        <td title="Comment">Focus on China market, but with high expense ratio and crazy turnover rate, DO NOT touch yet!</td>
       </tr>
     </tbody>
   </table>
-  <h1>Dream Bucket / High Risk (5% of Total Asset)</h1>
+  <h1 class="bucket">
+    <span>Dream Bucket / High Risk (5% of Total Asset)</span>&nbsp;<span class="note">[Seek under-valued common stocks and determine to hold it
+      for 5+ years or even zero out!]</span>
+  </h1>
   <table class="portfolio">
     <thead>
       <tr>
@@ -278,11 +392,11 @@
         <td title="Equity Score">Very Bearish (0.9)</td>
         <td title="Exit Plan">Hold 5 years or zero out!</td>
         <td title="Bucket Weight">50%</td>
-        <td title="Objective">Cloudera, Inc. is a US-based software company that provides a software platform for
-          data engineering, data warehousing, machine learning and analytics that runs in the cloud or on premises. Aims
-          to be the "enterprise data cloud company from edge to AI."</td>
-        <td title="Comment">As a big data specialist with loyalty customers and sticky services, I think Clouder's
-          sell-off could be overdone and expect a prevailing future.</td>
+        <td title="Objective">Cloudera, Inc. is a US-based software company that provides a software platform for data engineering, data
+          warehousing, machine learning and analytics that runs in the cloud or on premises. Aims to be the "enterprise data cloud company from edge
+          to AI."</td>
+        <td title="Comment">As a big data specialist with loyalty customers and sticky services, I think Clouder's sell-off could be overdone and
+          expect a prevailing future.</td>
       </tr>
       <tr>
         <td class="class" colspan="14" title="Asset Class">Cryptocurrency (0% of Dream Bucket)</td>
@@ -290,4 +404,7 @@
     </tbody>
   </table>
 </body>
+<h3>
+  Any thoughts? <a href="mailto:lchenaction@gmail.com?subject=Lifelong Adjusting Portfolio&body=Hi,">Send email</a>.
+</h3>
 </html>

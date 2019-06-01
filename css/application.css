@@ -51,6 +51,11 @@ html {
   margin-left: 20px;
 }
 
+.bucket .note {
+  font-size: 0.5em;
+  font-weight: normal;
+}
+
 .portfolio {
   border-collapse: collapse;
   border: 1px solid gray;
