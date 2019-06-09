@@ -66,6 +66,7 @@ a {
 .bucket .note {
   font-size: 0.5em;
   font-weight: normal;
+  margin-left: 0.5em;
 }
 
 .portfolio {
@@ -97,10 +98,18 @@ a {
 
 .portfolio .hold {
   color: green;
-  font-weight: normal;
+}
+
+.portfolio .pend {
+  color: blue;
 }
 
 .portfolio .hide {
   visibility: hidden;
 }
 
+.portfolio .note {
+  font-size: 0.5em;
+  font-weight: normal;
+  margin-left: 0.5em;
+}
