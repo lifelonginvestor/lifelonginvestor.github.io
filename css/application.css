@@ -4,6 +4,11 @@ html {
   font-size: 14px
 }
 
+input {
+  font: inherit;
+  color: purple;
+}
+
 a {
   text-decoration: none;
 }
@@ -63,6 +68,23 @@ a {
   line-height: 1.5em;
 }
 
+.totalAsset {
+  color: purple;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.totalAsset .note {
+  font-size: 0.75em;
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+
+.assetAllocation {
+  color: purple;
+  font-weight: bold;
+}
+
 .bucket .note {
   font-size: 0.5em;
   font-weight: normal;
@@ -97,11 +119,11 @@ a {
 }
 
 .portfolio .hold {
-  color: green;
+  background-color: #FFD700;
 }
 
 .portfolio .pend {
-  color: blue;
+  background-color: #F0E68C;
 }
 
 .portfolio .hide {
