@@ -48,6 +48,8 @@
     var totalAssetEl = $("input#totalAsset");
     totalAssetEl.change(function() {
       calculateAllocation($(this));
+      $("td.assetAllocation").fadeOut(500);
+      $("td.assetAllocation").fadeIn(500);
     });
     calculateAllocation(totalAssetEl);
   });
@@ -63,8 +65,8 @@
     <p>[Formulas: stock allocation: 120 - 40s (age) = ~80%; unwavering saving rate = 50%+; includes 401(k), 403(b), IRAs, 529, etc; online broker:
       Fidelity or Vanguard; annual returns and volatilities as of 05/31/2019.]</p>
     <p class="totalAsset">
-      <i class="far fa-treasure-chest fa-fw"></i> Total Asset Amount: <input id="totalAsset" value="$1,000,000" autofocus><span class="note">[Change
-        and press enter to see results!]</span>
+      <i class="far fa-treasure-chest fa-fw"></i> Total Asset Amount: <input id="totalAsset" value="$1,000,000" autofocus><span class="note">[Update
+        and press enter to refresh.]</span>
     </p>
   </div>
   <h1 class="bucket">
