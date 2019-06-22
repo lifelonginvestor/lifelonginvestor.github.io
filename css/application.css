@@ -135,3 +135,11 @@ a {
   font-weight: normal;
   margin-left: 0.5em;
 }
+
+.portfolio .objective {
+  min-width: 250px;
+}
+
+.portfolio .comment {
+  min-width: 200px;
+}
