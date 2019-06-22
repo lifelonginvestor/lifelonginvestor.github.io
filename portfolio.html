@@ -35,7 +35,7 @@
       var amountSplit = "";
       $.each(percentSplit, function(index, percent) {
         if (!!amountSplit)
-          amountSplit += '/';
+          amountSplit += '/ ';
         amountSplit += moneyFormatter.format(parseFloat(percent) / 100 * totalAsset);
       });
       // Remove all other elements except percents
