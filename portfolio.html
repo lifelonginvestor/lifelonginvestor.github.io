@@ -35,7 +35,7 @@
       var amountSplit = "";
       $.each(percentSplit, function(index, percent) {
         if (!!amountSplit)
-          amountSplit += '/ ';
+          amountSplit += '/<br>';
         amountSplit += moneyFormatter.format(parseFloat(percent) / 100 * totalAsset);
       });
       // Remove all other elements except percents
@@ -63,7 +63,7 @@
 <body>
   <div align="center">
     <h1>
-      A Lifelong Adjusting Portfolio<span style="font-size: 0.75em; margin-left: 10px">(US Market v1.0.0)</span>
+      A Lifelong Adjusting Portfolio<span style="font-size: 0.75em; margin-left: 10px">(US Market v1.1.0)</span>
     </h1>
     <h2>A slightly aggressive portfolio in your 40s with a middle or upper class income, updated Jun 23, 2019.</h2>
     <p>[Formulas: stock allocation: 120 - 40s (age) = ~80%; unwavering saving rate = 50%+; includes 401(k), 403(b), IRAs, 529, etc; online broker:
@@ -156,7 +156,7 @@
       </tr>
       <tr class="hold">
         <td title="Asset Category">High Yield Muni</td>
-        <td title="Asset Type">Index Fund</td>
+        <td title="Asset Type">Select Fund</td>
         <td title="Asset Symbol/Ticker">VWALX</td>
         <td title="Asset Name">Vanguard High-Yield Tax-Exempt Fund Admiral Shares</td>
         <td title="Expense Ratio">0.09%</td>
@@ -168,7 +168,7 @@
         <td title="Asset Allocation" class="assetAllocation"><span class="percent">20%</span></td>
         <td title="Objective">Seek a high and sustainable level of current income that is exempt from federal personal income taxes by investing
           in investment-grade municipal bonds, as determined by a nationally recognized statistical rating organization.</td>
-        <td title="Comment">Matches above investing criteria perfectly, steady and slow growth, ideal choice!</td>
+        <td title="Comment">Matches above investing criteria perfectly, slow and steady growth, ideal choice!</td>
       </tr>
       <tr>
         <td class="class" colspan="15" title="Asset Class">U.S. Personal Loans (0% of Total Asset)</td>
@@ -299,7 +299,7 @@
         <td title="Standard Deviation">13.74</td>
         <td title="Annual Returns">1:5.36%, 3:15.15%, 5:12.48%, 10:15.20%</td>
         <td title="Overall Rating">4 stars</td>
-        <td title="Asset Allocation" class="assetAllocation"><span class="percent">5%/15%</span></td>
+        <td title="Asset Allocation" class="assetAllocation"><span class="percent">5%/15%/20%</span></td>
         <td title="Objective">Vanguard’s oldest growth fund focuses on well-known blue-chip companies that tend to hold strong positions in their
           respective industries. The fund’s investment advisors believe these companies have the ability to deliver positive earnings growth and
           superior returns over the long term.</td>
@@ -393,7 +393,7 @@
           that relate to software or information-based services.</td>
         <td title="Comment">Or VITAX, has higher expense ratio, almost identical to FBSOX, but this one has no minimum limit.</td>
       </tr>
-      <tr class="pend">
+      <tr class="hold">
         <td title="Asset Category">Utilities & Energy</td>
         <td title="Asset Type">Index Fund</td>
         <td title="Asset Symbol">VUIAX</td>
@@ -404,11 +404,11 @@
         <td title="Standard Deviation">11.21</td>
         <td title="Annual Returns">1:17.16%, 3:9.99%, 5:10.36%, 10:12.71%</td>
         <td title="Overall Rating">4 stars</td>
-        <td title="Asset Allocation" class="assetAllocation"><span class="percent">0%</span></td>
+        <td title="Asset Allocation" class="assetAllocation"><span class="percent">5%</span></td>
         <td title="Objective">This low-cost index fund offers exposure to the utilities sector of the U.S. equity market, which includes stocks
           of companies that distribute electricity, water, or gas, or that operate as independent power producers.</td>
         <td title="Comment">Ideal choice for utilities sector, but has a very high minimum to invest limit! Alternative is ETF: VPU(0.1) or
-          FUTY(0.084)</td>
+          FUTY(0.084). Choose this over VCDAX for hedging purpose!</td>
       </tr>
       <tr>
         <td title="Asset Category">Consumer Cyclical</td>
@@ -426,18 +426,18 @@
           consumers.</td>
         <td title="Comment">Or VCSAX which has much lower expense ratio, but high bar, a good choice for consumer staples sector.</td>
       </tr>
-      <tr class="hold">
+      <tr class="pend">
         <td title="Asset Category">Consumer Discretionary</td>
         <td title="Asset Type">Index Fund</td>
         <td title="Asset Symbol">VCDAX</td>
         <td title="Asset Name">Vanguard Consumer Discretionary Index Fund Admiral Shares</td>
         <td title="Expense Ratio">0.1%</td>
-        <td title="Turnover Rate">28.1%</td>
+        <td title="Turnover Rate">4%</td>
         <td title="Sharpe Ratio">1.17</td>
         <td title="Standard Deviation">N/A</td>
         <td title="Annual Returns">1:2.36%, 3:12.01%, 5:10.96%, 10:18.12%</td>
         <td title="Overall Rating">5 stars</td>
-        <td title="Asset Allocation" class="assetAllocation"><span class="percent">5%</span></td>
+        <td title="Asset Allocation" class="assetAllocation"><span class="percent">0%</span></td>
         <td title="Objective">Offers exposure to the consumer discretionary sector of the U.S. equity market, which includes stocks of companies
           that manufacture products and provide services that consumers consider nonessential, such as retailers, restaurants, and internet and direct
           marketing retail companies.</td>
@@ -502,8 +502,8 @@
     </tbody>
   </table>
   <h1 class="bucket">
-    <span>Dream Bucket / High Risk (5% of Total Asset)</span><span class="note">[Seeks undervalued common stocks and determine to hold it for
-      5+ years or even zero out! Otherwise all in above funds.]</span>
+    <span>Dream Bucket / High Risk (5%/0% of Total Asset)</span><span class="note">[Seeks undervalued common stocks and determine to hold it
+      for 5+ years or even zero out! Otherwise all in above funds.]</span>
   </h1>
   <table class="portfolio">
     <thead>
@@ -525,11 +525,11 @@
     </thead>
     <tbody>
       <tr>
-        <td class="class" colspan="14" title="Asset Class">10 Years' Stocks (2.5% of Total Asset)<span class="note">[Do you really think
-            you can predicate a select stock will outperform index within a 10-years span?!]</span></td>
+        <td class="class" colspan="14" title="Asset Class">10 Years' Stocks (2.5%/0% of Total Asset)<span class="note">[Do you really
+            think you can predicate a select stock will outperform index within a 10-years span?!]</span></td>
       </tr>
       <tr>
-        <td class="class" colspan="14" title="Asset Class">5 Years' Stocks (2.5% of Total Asset)<span class="note">[With above elegant
+        <td class="class" colspan="14" title="Asset Class">5 Years' Stocks (2.5%/0% of Total Asset)<span class="note">[With above elegant
             index funds, don't think you should consider playing with any individual stocks!]</span></td>
       </tr>
       <tr class="hold">
@@ -543,7 +543,7 @@
         <td title="Annual Return (TTM)">Equity:-31.59%, Asset:-18.71%, Investment:-31.59%</td>
         <td title="Equity Score">Very Bearish (0.9)</td>
         <td title="Exit Plan">Hold 5 years or zero out.</td>
-        <td title="Asset Allocation" class="assetAllocation"><span class="percent">2.5%</span></td>
+        <td title="Asset Allocation" class="assetAllocation"><span class="percent">2.5%/0%</span></td>
         <td title="Objective">Cloudera, Inc. is a US-based software company that provides a software platform for data engineering, data
           warehousing, machine learning and analytics that runs in the cloud or on premises. Aims to be the "enterprise data cloud company from edge
           to AI."</td>
