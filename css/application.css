@@ -9,6 +9,10 @@ input {
   color: purple;
 }
 
+input[type=checkbox] {
+  vertical-align: middle;
+}
+
 a {
   text-decoration: none;
 }
@@ -127,7 +131,7 @@ a {
 }
 
 .portfolio .hide {
-  visibility: hidden;
+  visibility: collapse;
 }
 
 .portfolio .note {

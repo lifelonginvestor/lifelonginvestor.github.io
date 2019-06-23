@@ -51,7 +51,11 @@
       $("td.assetAllocation").fadeOut(500);
       $("td.assetAllocation").fadeIn(500);
     });
+
     calculateAllocation(totalAssetEl);
+    $("input#showAll").change(function() {
+      $("table.portfolio tbody tr").not(".hold").toggle(this.checked);
+    });
   });
 </script>
 <title>Lifelong Portfolio</title>
@@ -65,8 +69,9 @@
     <p>[Formulas: stock allocation: 120 - 40s (age) = ~80%; unwavering saving rate = 50%+; includes 401(k), 403(b), IRAs, 529, etc; online broker:
       Fidelity or Vanguard; annual returns and volatilities as of 05/31/2019.]</p>
     <p class="totalAsset">
-      <i class="far fa-treasure-chest fa-fw"></i> Total Asset Amount: <input id="totalAsset" value="$1,000,000" autofocus><span class="note">[Update
-        and press enter to refresh.]</span>
+      <i class="far fa-treasure-chest fa-fw"></i><label for="totalAsset"> Total Asset Amount: </label><input id="totalAsset" name="totalAsset"
+        value="$1,000,000" title="Update and press enter to refresh." autofocus>&nbsp;<input id="showAll" name="showAll" type="checkbox"
+        checked><label for="showAll" title="Show all assets">Show All</label>
     </p>
   </div>
   <h1 class="bucket">
@@ -127,7 +132,7 @@
         <td title="Overall Rating">null</td>
         <td title="Asset Allocation" class="assetAllocation"><span class="percent">0%</span></td>
         <td title="Objective">Offers a low-cost, diversified approach to bond investing, invests about 60% of assets in corporate bonds and 40%
-          in U.S. government bonds within maturities of more than ten years.</td>
+          in U.S. government bonds within maturities of more than ten years. Also refer to VWETX and VUSUX.</td>
         <td title="Comment">A new mixed bond fund from Vanguard, a reasonable choice for the U.S. total bond market.</td>
       </tr>
       <tr>
@@ -163,7 +168,7 @@
         <td title="Asset Allocation" class="assetAllocation"><span class="percent">20%</span></td>
         <td title="Objective">Seek a high and sustainable level of current income that is exempt from federal personal income taxes by investing
           in investment-grade municipal bonds, as determined by a nationally recognized statistical rating organization.</td>
-        <td title="Comment">Matches above investing criteria perfectly, steady growth, ideal choice!</td>
+        <td title="Comment">Matches above investing criteria perfectly, steady and slow growth, ideal choice!</td>
       </tr>
       <tr>
         <td class="class" colspan="15" title="Asset Class">U.S. Personal Loans (0% of Total Asset)</td>
@@ -370,7 +375,7 @@
         <td title="Asset Allocation" class="assetAllocation"><span class="percent">20%</span></td>
         <td title="Objective">Seeks to track the performance of a benchmark index that measures the investment return of stocks in the
           information technology sector. Passively managed.</td>
-        <td title="Comment">Ideal choice for IT sector, but has a very high minimum to invest limit! Alternative is ETF: VGT(0.1) or FTEC(0.084)</td>
+        <td title="Comment">Ideal choice for IT sector, but has a very high minimum to invest limit! Alternative is ETF: VGT(0.1) or FTEC(0.084).</td>
       </tr>
       <tr>
         <td title="Asset Category">Information Technology</td>
@@ -421,7 +426,7 @@
           consumers.</td>
         <td title="Comment">Or VCSAX which has much lower expense ratio, but high bar, a good choice for consumer staples sector.</td>
       </tr>
-      <tr class="pend">
+      <tr class="hold">
         <td title="Asset Category">Consumer Discretionary</td>
         <td title="Asset Type">Index Fund</td>
         <td title="Asset Symbol">VCDAX</td>
@@ -436,7 +441,8 @@
         <td title="Objective">Offers exposure to the consumer discretionary sector of the U.S. equity market, which includes stocks of companies
           that manufacture products and provide services that consumers consider nonessential, such as retailers, restaurants, and internet and direct
           marketing retail companies.</td>
-        <td title="Comment">Or FSCPX, A good choice for consumer discretionary sector, also with a high minimum to invest limit.</td>
+        <td title="Comment">Or FSCPX, A good choice for consumer discretionary sector, also with a high minimum to invest limit. Alternative ETF:
+          VCR(0.1).</td>
       </tr>
       <tr>
         <td class="class" colspan="13" title="Asset Class">International Stock Markets (10%/0% of Total Asset)<span class="note">[Considering
@@ -460,7 +466,7 @@
         <td title="Comment">Long-term investors who want to add a diversified international equity position to their portfolio might want to
           consider this fund as an option.</td>
       </tr>
-      <tr>
+      <tr class="hold">
         <td title="Asset Category">Foreign Large Blend</td>
         <td title="Asset Type">Index Fund</td>
         <td title="Asset Symbol">FZILX</td>
@@ -506,7 +512,6 @@
         <th>Asset Type</th>
         <th>Asset Symbol</th>
         <th>Asset Name</th>
-        <th>Asset Industry</th>
         <th>P/E (TTM)</th>
         <th>Dividend Yield</th>
         <th>Performance (52-Wk)</th>
@@ -528,11 +533,10 @@
             index funds, don't think you should consider playing with any individual stocks!]</span></td>
       </tr>
       <tr class="hold">
-        <td title="Asset Category">Smalll Cap</td>
+        <td title="Asset Category">Information Technology (Software)</td>
         <td title="Asset Type">Common Stock</td>
         <td title="Asset Symbol">CLDR</td>
-        <td title="Asset Name">CLOUDERA INC</td>
-        <td title="Asset Industry">Information Technology (Software)</td>
+        <td title="Asset Name">Cloudera, Inc.</td>
         <td title="P/E (TTM)">--</td>
         <td title="Dividend Yield">--</td>
         <td title="Performance (52-Wk)">-39.92%</td>
