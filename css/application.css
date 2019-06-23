@@ -98,7 +98,7 @@ a {
 .portfolio {
   border-collapse: collapse;
   border: 1px solid gray;
-  margin: 10px 0px;
+  margin: 15px 0px;
 }
 
 .portfolio th, .portfolio td {
