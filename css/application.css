@@ -141,9 +141,11 @@ a {
 }
 
 .portfolio .objective {
-  min-width: 250px;
+  /* min-width: 250px; */
+  
 }
 
 .portfolio .comment {
-  min-width: 200px;
+  /* min-width: 200px; */
+  
 }
