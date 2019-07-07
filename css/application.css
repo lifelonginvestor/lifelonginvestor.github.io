@@ -64,6 +64,14 @@ a:hover {
   font-family: serif
 }
 
+.column-left {
+  vertical-align: top;
+}
+
+.column-right {
+  vertical-align: top;
+}
+
 .announce {
   margin-left: 20px;
 }
@@ -74,6 +82,10 @@ a:hover {
 
 .announce ul {
   line-height: 1.5em;
+}
+
+.column-right .announce ul {
+  line-height: 1.4em;
 }
 
 .totalAsset {
