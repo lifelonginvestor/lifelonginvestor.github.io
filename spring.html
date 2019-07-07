@@ -1,0 +1,1740 @@
+
+<!-- saved from url=(0069) -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lifelong Manual</title>
+<!-- favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/site.webmanifest">
+<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<!-- Google Analytics -->
+<script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-109230910-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+<!-- stylesheets -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/proxima-nova-soft.css">
+<link rel="stylesheet" type="text/css" href="css/application.css">
+<link rel="stylesheet" type="text/css" href="css/manual.css">
+<!-- javascripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf-8">
+  
+</script>
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+  <div lang="en" class="book">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h1 class="title">
+            <a name="d0e3"></a>A Lifelong Investor's Manual<span style="font-size: 0.75em; margin-left: 10px">(US Market v0.0.1)</span>
+          </h1>
+        </div>
+        <div>
+          <h2>“Investing is simple, but not easy.” — Warren Buffett, updated Jul 7, 2019</h2>
+        </div>
+        <hr>
+      </div>
+      <div class="toc">
+        <dl class="toc">
+          <dt>
+            <span class="part"><a href="#boot-documentation">I. Spring Boot Documentation</a></span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="chapter"><a href="#boot-documentation-about">1. About the Documentation</a></span>
+              </dt>
+              <dt>
+                <span class="chapter"><a href="#boot-documentation-getting-help">2. Getting Help</a></span>
+              </dt>
+              <dt>
+                <span class="chapter"><a href="#boot-documentation-first-steps">3. First Steps</a></span>
+              </dt>
+              <dt>
+                <span class="chapter"><a href="#_working_with_spring_boot">4. Working with Spring Boot</a></span>
+              </dt>
+              <dt>
+                <span class="chapter"><a href="#_learning_about_spring_boot_features">5. Learning about Spring Boot Features</a></span>
+              </dt>
+              <dt>
+                <span class="chapter"><a href="#_moving_to_production">6. Moving to Production</a></span>
+              </dt>
+              <dt>
+                <span class="chapter"><a href="#_advanced_topics">7. Advanced Topics</a></span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="part"><a href="#getting-started">II. Getting Started</a></span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="chapter"><a href="#getting-started-introducing-spring-boot">8. Introducing Spring Boot</a></span>
+              </dt>
+              <dt>
+                <span class="chapter"><a href="#getting-started-system-requirements">9. System Requirements</a></span>
+              </dt>
+              <dd>
+                <dl>
+                  <dt>
+                    <span class="section"><a href="#getting-started-system-requirements-servlet-containers">9.1. Servlet Containers</a></span>
+                  </dt>
+                </dl>
+              </dd>
+              <dt>
+                <span class="chapter"><a href="#getting-started-installing-spring-boot">10. Installing Spring Boot</a></span>
+              </dt>
+              <dd>
+                <dl>
+                  <dt>
+                    <span class="section"><a href="#getting-started-installation-instructions-for-java">10.1. Installation Instructions for
+                        the Java Developer</a></span>
+                  </dt>
+                  <dd>
+                    <dl>
+                      <dt>
+                        <span class="section"><a href="#getting-started-maven-installation">10.1.1. Maven Installation</a></span>
+                      </dt>
+                      <dt>
+                        <span class="section"><a href="#getting-started-gradle-installation">10.1.2. Gradle Installation</a></span>
+                      </dt>
+                    </dl>
+                  </dd>
+                  <dt>
+                    <span class="section"><a href="#getting-started-installing-the-cli">10.2. Installing the Spring Boot CLI</a></span>
+                  </dt>
+                  <dd>
+                    <dl>
+                      <dt>
+                        <span class="section"><a href="#getting-started-manual-cli-installation">10.2.1. Manual Installation</a></span>
+                      </dt>
+                      <dt>
+                        <span class="section"><a href="#getting-started-sdkman-cli-installation">10.2.2. Installation with SDKMAN!</a></span>
+                      </dt>
+                      <dt>
+                        <span class="section"><a href="#getting-started-homebrew-cli-installation">10.2.3. OSX Homebrew Installation</a></span>
+                      </dt>
+                      <dt>
+                        <span class="section"><a href="#getting-started-macports-cli-installation">10.2.4. MacPorts Installation</a></span>
+                      </dt>
+                      <dt>
+                        <span class="section"><a href="#getting-started-cli-command-line-completion">10.2.5. Command-line Completion</a></span>
+                      </dt>
+                      <dt>
+                        <span class="section"><a href="#getting-started-scoop-cli-installation">10.2.6. Windows Scoop Installation</a></span>
+                      </dt>
+                      <dt>
+                        <span class="section"><a href="#getting-started-cli-example">10.2.7. Quick-start Spring CLI Example</a></span>
+                      </dt>
+                    </dl>
+                  </dd>
+                  <dt>
+                    <span class="section"><a href="#getting-started-upgrading-from-an-earlier-version">10.3. Upgrading from an Earlier
+                        Version of Spring Boot</a></span>
+                  </dt>
+                </dl>
+              </dd>
+              <dt>
+                <span class="chapter"><a href="#getting-started-first-application">11. Developing Your First Spring Boot Application</a></span>
+              </dt>
+              <dd>
+                <dl>
+                  <dt>
+                    <span class="section"><a href="#getting-started-first-application-pom">11.1. Creating the POM</a></span>
+                  </dt>
+                  <dt>
+                    <span class="section"><a href="#getting-started-first-application-dependencies">11.2. Adding Classpath Dependencies</a></span>
+                  </dt>
+                  <dt>
+                    <span class="section"><a href="#getting-started-first-application-code">11.3. Writing the Code</a></span>
+                  </dt>
+                  <dd>
+                    <dl>
+                      <dt>
+                        <span class="section"><a href="#getting-started-first-application-annotations">11.3.1. The @RestController and
+                            @RequestMapping Annotations</a></span>
+                      </dt>
+                      <dt>
+                        <span class="section"><a href="#getting-started-first-application-auto-configuration">11.3.2. The
+                            @EnableAutoConfiguration Annotation</a></span>
+                      </dt>
+                      <dt>
+                        <span class="section"><a href="#getting-started-first-application-main-method">11.3.3. The “main” Method</a></span>
+                      </dt>
+                    </dl>
+                  </dd>
+                  <dt>
+                    <span class="section"><a href="#getting-started-first-application-run">11.4. Running the Example</a></span>
+                  </dt>
+                  <dt>
+                    <span class="section"><a href="#getting-started-first-application-executable-jar">11.5. Creating an Executable Jar</a></span>
+                  </dt>
+                </dl>
+              </dd>
+              <dt>
+                <span class="chapter"><a href="#getting-started-whats-next">12. What to Read Next</a></span>
+              </dt>
+            </dl>
+          </dd>
+        </dl>
+      </div>
+      <div class="part">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h1 class="title">
+                <a name="boot-documentation" href="#boot-documentation"></a>Part&nbsp;I.&nbsp;Spring Boot Documentation
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="partintro">
+          <div></div>
+          <p>This section provides a brief overview of Spring Boot reference documentation. It serves as a map for the rest of the document.</p>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="boot-documentation-about" href="#boot-documentation-about"></a>1.&nbsp;About the Documentation
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>The Spring Boot reference guide is available as</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist" style="list-style-type: disc;">
+              <li class="listitem"><a class="link" href="https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/html" target="_top">HTML</a></li>
+              <li class="listitem"><a class="link"
+                href="https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/pdf/spring-boot-reference.pdf" target="_top">PDF</a></li>
+              <li class="listitem"><a class="link"
+                href="https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/epub/spring-boot-reference.epub" target="_top">EPUB</a></li>
+            </ul>
+          </div>
+          <p>
+            The latest copy is available at <a class="link" href="https://docs.spring.io/spring-boot/docs/current/reference" target="_top">docs.spring.io/spring-boot/docs/current/reference</a>.
+          </p>
+          <p>Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such
+            copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.</p>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="boot-documentation-getting-help" href="#boot-documentation-getting-help"></a>2.&nbsp;Getting Help
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>If you have trouble with Spring Boot, we would like to help.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist" style="list-style-type: disc;">
+              <li class="listitem">Try the <a class="link" href="#howto" title="Part IX. ‘How-to’ guides">How-to documents</a>. They provide
+                solutions to the most common questions.
+              </li>
+              <li class="listitem">Learn the Spring basics. Spring Boot builds on many other Spring projects. Check the <a class="link"
+                href="https://spring.io/" target="_top">spring.io</a> web-site for a wealth of reference documentation. If you are starting out with
+                Spring, try one of the <a class="link" href="https://spring.io/guides" target="_top">guides</a>.
+              </li>
+              <li class="listitem">Ask a question. We monitor <a class="link" href="https://stackoverflow.com/" target="_top">stackoverflow.com</a>
+                for questions tagged with <a class="link" href="https://stackoverflow.com/tags/spring-boot" target="_top"><code class="literal">spring-boot</code></a>.
+              </li>
+              <li class="listitem">Report bugs with Spring Boot at <a class="link" href="https://github.com/spring-projects/spring-boot/issues"
+                target="_top">github.com/spring-projects/spring-boot/issues</a>.
+              </li>
+            </ul>
+          </div>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tbody>
+                <tr>
+                  <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="img/manual/note.png"></td>
+                  <th align="left">Note</th>
+                </tr>
+                <tr>
+                  <td align="left" valign="top"><p>
+                      All of Spring Boot is open source, including the documentation. If you find problems with the docs or if you want to improve
+                      them, please <a class="link" href="https://github.com/spring-projects/spring-boot/tree/v2.1.6.RELEASE" target="_top">get
+                        involved</a>.
+                    </p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="boot-documentation-first-steps" href="#boot-documentation-first-steps"></a>3.&nbsp;First Steps
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>
+            If you are getting started with Spring Boot or 'Spring' in general, start with <a class="link" href="#getting-started"
+              title="Part II. Getting Started">the following topics</a>:
+          </p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist" style="list-style-type: disc;">
+              <li class="listitem"><span class="strong"><strong>From scratch:</strong></span> <a class="link"
+                href="#getting-started-introducing-spring-boot" title="8. Introducing Spring Boot">Overview</a> | <a class="link"
+                href="#getting-started-system-requirements" title="9. System Requirements">Requirements</a> | <a class="link"
+                href="#getting-started-installing-spring-boot" title="10. Installing Spring Boot">Installation</a></li>
+              <li class="listitem"><span class="strong"><strong>Tutorial:</strong></span> <a class="link"
+                href="#getting-started-first-application" title="11. Developing Your First Spring Boot Application">Part 1</a> | <a class="link"
+                href="#getting-started-first-application-code" title="11.3 Writing the Code">Part 2</a></li>
+              <li class="listitem"><span class="strong"><strong>Running your example:</strong></span> <a class="link"
+                href="#getting-started-first-application-run" title="11.4 Running the Example">Part 1</a> | <a class="link"
+                href="#getting-started-first-application-executable-jar" title="11.5 Creating an Executable Jar">Part 2</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="_working_with_spring_boot" href="#_working_with_spring_boot"></a>4.&nbsp;Working with Spring Boot
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>
+            Ready to actually start using Spring Boot? <a class="link" href="#using-boot" title="Part III. Using Spring Boot">We have you covered</a>:
+          </p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist" style="list-style-type: disc;">
+              <li class="listitem"><span class="strong"><strong>Build systems:</strong></span> <a class="link" href="#using-boot-maven"
+                title="13.2 Maven">Maven</a> | <a class="link" href="#using-boot-gradle" title="13.3 Gradle">Gradle</a> | <a class="link"
+                href="#using-boot-ant" title="13.4 Ant">Ant</a> | <a class="link" href="#using-boot-starter" title="13.5 Starters">Starters</a></li>
+              <li class="listitem"><span class="strong"><strong>Best practices:</strong></span> <a class="link"
+                href="#using-boot-structuring-your-code" title="14. Structuring Your Code">Code Structure</a> | <a class="link"
+                href="#using-boot-configuration-classes" title="15. Configuration Classes">@Configuration</a> | <a class="link"
+                href="#using-boot-auto-configuration" title="16. Auto-configuration">@EnableAutoConfiguration</a> | <a class="link"
+                href="#using-boot-spring-beans-and-dependency-injection" title="17. Spring Beans and Dependency Injection">Beans and Dependency
+                  Injection</a></li>
+              <li class="listitem"><span class="strong"><strong>Running your code:</strong></span> <a class="link"
+                href="#using-boot-running-from-an-ide" title="19.1 Running from an IDE">IDE</a> | <a class="link"
+                href="#using-boot-running-as-a-packaged-application" title="19.2 Running as a Packaged Application">Packaged</a> | <a class="link"
+                href="#using-boot-running-with-the-maven-plugin" title="19.3 Using the Maven Plugin">Maven</a> | <a class="link"
+                href="#using-boot-running-with-the-gradle-plugin" title="19.4 Using the Gradle Plugin">Gradle</a></li>
+              <li class="listitem"><span class="strong"><strong>Packaging your app:</strong></span> <a class="link"
+                href="#using-boot-packaging-for-production" title="21. Packaging Your Application for Production">Production jars</a></li>
+              <li class="listitem"><span class="strong"><strong>Spring Boot CLI:</strong></span> <a class="link" href="#cli"
+                title="Part VII. Spring Boot CLI">Using the CLI</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="_learning_about_spring_boot_features" href="#_learning_about_spring_boot_features"></a>5.&nbsp;Learning about Spring Boot
+                  Features
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>
+            Need more details about Spring Boot’s core features? <a class="link" href="#boot-features" title="Part IV. Spring Boot features">The
+              following content is for you</a>:
+          </p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist" style="list-style-type: disc;">
+              <li class="listitem"><span class="strong"><strong>Core Features:</strong></span> <a class="link"
+                href="#boot-features-spring-application" title="23. SpringApplication">SpringApplication</a> | <a class="link"
+                href="#boot-features-external-config" title="24. Externalized Configuration">External Configuration</a> | <a class="link"
+                href="#boot-features-profiles" title="25. Profiles">Profiles</a> | <a class="link" href="#boot-features-logging" title="26. Logging">Logging</a></li>
+              <li class="listitem"><span class="strong"><strong>Web Applications:</strong></span> <a class="link"
+                href="#boot-features-spring-mvc" title="29.1 The “Spring Web MVC Framework”">MVC</a> | <a class="link"
+                href="#boot-features-embedded-container" title="29.4 Embedded Servlet Container Support">Embedded Containers</a></li>
+              <li class="listitem"><span class="strong"><strong>Working with data:</strong></span> <a class="link" href="#boot-features-sql"
+                title="31. Working with SQL Databases">SQL</a> | <a class="link" href="#boot-features-nosql"
+                title="32. Working with NoSQL Technologies">NO-SQL</a></li>
+              <li class="listitem"><span class="strong"><strong>Messaging:</strong></span> <a class="link" href="#boot-features-messaging"
+                title="34. Messaging">Overview</a> | <a class="link" href="#boot-features-jms" title="34.1 JMS">JMS</a></li>
+              <li class="listitem"><span class="strong"><strong>Testing:</strong></span> <a class="link" href="#boot-features-testing"
+                title="46. Testing">Overview</a> | <a class="link" href="#boot-features-testing-spring-boot-applications"
+                title="46.3 Testing Spring Boot Applications">Boot Applications</a> | <a class="link" href="#boot-features-test-utilities"
+                title="46.4 Test Utilities">Utils</a></li>
+              <li class="listitem"><span class="strong"><strong>Extending:</strong></span> <a class="link"
+                href="#boot-features-developing-auto-configuration" title="49. Creating Your Own Auto-configuration">Auto-configuration</a> | <a
+                class="link" href="#boot-features-condition-annotations" title="49.3 Condition Annotations">@Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="_moving_to_production" href="#_moving_to_production"></a>6.&nbsp;Moving to Production
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>
+            When you are ready to push your Spring Boot application to production, we have <a class="link" href="#production-ready"
+              title="Part V. Spring Boot Actuator: Production-ready features">some tricks</a> that you might like:
+          </p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist" style="list-style-type: disc;">
+              <li class="listitem"><span class="strong"><strong>Management endpoints:</strong></span> <a class="link"
+                href="#production-ready-endpoints" title="53. Endpoints">Overview</a> | <a class="link" href="#">Customization</a></li>
+              <li class="listitem"><span class="strong"><strong>Connection options:</strong></span> <a class="link"
+                href="#production-ready-monitoring" title="54. Monitoring and Management over HTTP">HTTP</a> | <a class="link"
+                href="#production-ready-jmx" title="55. Monitoring and Management over JMX">JMX</a></li>
+              <li class="listitem"><span class="strong"><strong>Monitoring:</strong></span> <a class="link" href="#production-ready-metrics"
+                title="57. Metrics">Metrics</a> | <a class="link" href="#production-ready-auditing" title="58. Auditing">Auditing</a> | <a
+                class="link" href="#">Tracing</a> | <a class="link" href="#production-ready-process-monitoring" title="60. Process Monitoring">Process</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="_advanced_topics" href="#_advanced_topics"></a>7.&nbsp;Advanced Topics
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>Finally, we have a few topics for more advanced users:</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist" style="list-style-type: disc;">
+              <li class="listitem"><span class="strong"><strong>Spring Boot Applications Deployment:</strong></span> <a class="link"
+                href="#cloud-deployment" title="63. Deploying to the Cloud">Cloud Deployment</a> | <a class="link" href="#deployment-service"
+                title="64.2 Unix/Linux Services">OS Service</a></li>
+              <li class="listitem"><span class="strong"><strong>Build tool plugins:</strong></span> <a class="link"
+                href="#build-tool-plugins-maven-plugin" title="71. Spring Boot Maven Plugin">Maven</a> | <a class="link"
+                href="#build-tool-plugins-gradle-plugin" title="72. Spring Boot Gradle Plugin">Gradle</a></li>
+              <li class="listitem"><span class="strong"><strong>Appendix:</strong></span> <a class="link" href="#common-application-properties"
+                title="Appendix A. Common application properties">Application Properties</a> | <a class="link" href="#auto-configuration-classes"
+                title="Appendix C. Auto-configuration classes">Auto-configuration classes</a> | <a class="link" href="#executable-jar"
+                title="Appendix E. The Executable Jar Format">Executable Jars</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="part">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h1 class="title">
+                <a name="getting-started" href="#getting-started"></a>Part&nbsp;II.&nbsp;Getting Started
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="partintro">
+          <div></div>
+          <p>If you are getting started with Spring Boot, or “Spring” in general, start by reading this section. It answers the basic “what?”,
+            “how?” and “why?” questions. It includes an introduction to Spring Boot, along with installation instructions. We then walk you through
+            building your first Spring Boot application, discussing some core principles as we go.</p>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="getting-started-introducing-spring-boot" href="#getting-started-introducing-spring-boot"></a>8.&nbsp;Introducing Spring
+                  Boot
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>Spring Boot makes it easy to create stand-alone, production-grade Spring-based Applications that you can run. We take an opinionated
+            view of the Spring platform and third-party libraries, so that you can get started with minimum fuss. Most Spring Boot applications need
+            very little Spring configuration.</p>
+          <p>
+            You can use Spring Boot to create Java applications that can be started by using
+            <code class="literal">java -jar</code>
+            or more traditional war deployments. We also provide a command line tool that runs “spring scripts”.
+          </p>
+          <p>Our primary goals are:</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist" style="list-style-type: disc;">
+              <li class="listitem">Provide a radically faster and widely accessible getting-started experience for all Spring development.</li>
+              <li class="listitem">Be opinionated out of the box but get out of the way quickly as requirements start to diverge from the
+                defaults.</li>
+              <li class="listitem">Provide a range of non-functional features that are common to large classes of projects (such as embedded
+                servers, security, metrics, health checks, and externalized configuration).</li>
+              <li class="listitem">Absolutely no code generation and no requirement for XML configuration.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="getting-started-system-requirements" href="#getting-started-system-requirements"></a>9.&nbsp;System Requirements
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>
+            Spring Boot 2.1.6.RELEASE requires <a class="link" href="https://www.java.com/" target="_top">Java 8</a> and is compatible up to Java 11
+            (included). <a class="link" href="https://docs.spring.io/spring/docs/5.1.8.RELEASE/spring-framework-reference/" target="_top">Spring
+              Framework 5.1.8.RELEASE</a> or above is also required.
+          </p>
+          <p>Explicit build support is provided for the following build tools:</p>
+          <div class="informaltable">
+            <table class="informaltable"
+              style="border-collapse: collapse; border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid;">
+              <colgroup>
+                <col class="col_1">
+                <col class="col_2">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th style="border-right: 1px solid; border-bottom: 1px solid;" align="left" valign="top">Build Tool</th>
+                  <th style="border-bottom: 1px solid;" align="left" valign="top">Version</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="border-right: 1px solid; border-bottom: 1px solid;" align="left" valign="top"><p>Maven</p></td>
+                  <td style="border-bottom: 1px solid;" align="left" valign="top"><p>3.3+</p></td>
+                </tr>
+                <tr>
+                  <td style="border-right: 1px solid;" align="left" valign="top"><p>Gradle</p></td>
+                  <td style="" align="left" valign="top"><p>4.4+</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="section">
+            <div class="titlepage">
+              <div>
+                <div>
+                  <h2 class="title" style="clear: both">
+                    <a name="getting-started-system-requirements-servlet-containers" href="#getting-started-system-requirements-servlet-containers"></a>9.1&nbsp;Servlet
+                    Containers
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <p>Spring Boot supports the following embedded servlet containers:</p>
+            <div class="informaltable">
+              <table class="informaltable"
+                style="border-collapse: collapse; border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid;">
+                <colgroup>
+                  <col class="col_1">
+                  <col class="col_2">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="border-right: 1px solid; border-bottom: 1px solid;" align="left" valign="top">Name</th>
+                    <th style="border-bottom: 1px solid;" align="left" valign="top">Servlet Version</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="border-right: 1px solid; border-bottom: 1px solid;" align="left" valign="top"><p>Tomcat 9.0</p></td>
+                    <td style="border-bottom: 1px solid;" align="left" valign="top"><p>4.0</p></td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 1px solid; border-bottom: 1px solid;" align="left" valign="top"><p>Jetty 9.4</p></td>
+                    <td style="border-bottom: 1px solid;" align="left" valign="top"><p>3.1</p></td>
+                  </tr>
+                  <tr>
+                    <td style="border-right: 1px solid;" align="left" valign="top"><p>Undertow 2.0</p></td>
+                    <td style="" align="left" valign="top"><p>4.0</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>You can also deploy Spring Boot applications to any Servlet 3.1+ compatible container.</p>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="getting-started-installing-spring-boot" href="#getting-started-installing-spring-boot"></a>10.&nbsp;Installing Spring Boot
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>
+            Spring Boot can be used with “classic” Java development tools or installed as a command line tool. Either way, you need <a class="link"
+              href="https://www.java.com/" target="_top">Java SDK v1.8</a> or higher. Before you begin, you should check your current Java
+            installation by using the following command:
+          </p>
+          <pre class="screen">$ java -version</pre>
+          <p>
+            If you are new to Java development or if you want to experiment with Spring Boot, you might want to try the <a class="link"
+              href="#getting-started-installing-the-cli" title="10.2 Installing the Spring Boot CLI">Spring Boot CLI</a> (Command Line Interface)
+            first. Otherwise, read on for “classic” installation instructions.
+          </p>
+          <div class="section">
+            <div class="titlepage">
+              <div>
+                <div>
+                  <h2 class="title" style="clear: both">
+                    <a name="getting-started-installation-instructions-for-java" href="#getting-started-installation-instructions-for-java"></a>10.1&nbsp;Installation
+                    Instructions for the Java Developer
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <p>
+              You can use Spring Boot in the same way as any standard Java library. To do so, include the appropriate
+              <code class="literal">spring-boot-*.jar</code>
+              files on your classpath. Spring Boot does not require any special tools integration, so you can use any IDE or text editor. Also, there
+              is nothing special about a Spring Boot application, so you can run and debug a Spring Boot application as you would any other Java
+              program.
+            </p>
+            <p>
+              Although you <span class="emphasis"><em>could</em></span> copy Spring Boot jars, we generally recommend that you use a build tool that
+              supports dependency management (such as Maven or Gradle).
+            </p>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-maven-installation" href="#getting-started-maven-installation"></a>10.1.1&nbsp;Maven Installation
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Spring Boot is compatible with Apache Maven 3.3 or above. If you do not already have Maven installed, you can follow the instructions
+                at <a class="link" href="https://maven.apache.org/" target="_top">maven.apache.org</a>.
+              </p>
+              <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+                <table border="0" summary="Tip">
+                  <tbody>
+                    <tr>
+                      <td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="img/manual/tip.png"></td>
+                      <th align="left">Tip</th>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top"><p>
+                          On many operating systems, Maven can be installed with a package manager. If you use OSX Homebrew, try
+                          <code class="literal">brew install maven</code>
+                          . Ubuntu users can run
+                          <code class="literal">sudo apt-get install maven</code>
+                          . Windows users with <a class="link" href="https://chocolatey.org/" target="_top">Chocolatey</a> can run
+                          <code class="literal">choco install maven</code>
+                          from an elevated (administrator) prompt.
+                        </p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                Spring Boot dependencies use the
+                <code class="literal">org.springframework.boot</code>
+                <code class="literal">groupId</code>
+                . Typically, your Maven POM file inherits from the
+                <code class="literal">spring-boot-starter-parent</code>
+                project and declares dependencies to one or more <a class="link" href="#using-boot-starter" title="13.5 Starters">“Starters”</a>.
+                Spring Boot also provides an optional <a class="link" href="#build-tool-plugins-maven-plugin" title="71. Spring Boot Maven Plugin">Maven
+                  plugin</a> to create executable jars.
+              </p>
+              <p>
+                The following listing shows a typical
+                <code class="literal">pom.xml</code>
+                file:
+              </p>
+              <pre class="programlisting">
+              <span class="hl-directive" style="color: maroon">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;project</span> <span xmlns:d="http://docbook.org/ns/docbook" class="hl-attribute">xmlns</span>=<span
+                  xmlns:d="http://docbook.org/ns/docbook" class="hl-value">"http://maven.apache.org/POM/4.0.0"</span> <span
+                  xmlns:d="http://docbook.org/ns/docbook" class="hl-attribute">xmlns:xsi</span>=<span xmlns:d="http://docbook.org/ns/docbook"
+                  class="hl-value">"http://www.w3.org/2001/XMLSchema-instance"</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-attribute">xsi:schemaLocation</span>=<span xmlns:d="http://docbook.org/ns/docbook"
+                  class="hl-value">"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"</span><span
+                  xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;modelVersion&gt;</span>4.0.0<span xmlns:d="http://docbook.org/ns/docbook"
+                  class="hl-tag">&lt;/modelVersion&gt;</span>
+
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;groupId&gt;</span>com.example<span xmlns:d="http://docbook.org/ns/docbook"
+                  class="hl-tag">&lt;/groupId&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;artifactId&gt;</span>myproject<span xmlns:d="http://docbook.org/ns/docbook"
+                  class="hl-tag">&lt;/artifactId&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;version&gt;</span>0.0.1-SNAPSHOT<span xmlns:d="http://docbook.org/ns/docbook"
+                  class="hl-tag">&lt;/version&gt;</span>
+
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-comment">&lt;!-- Inherit defaults from Spring Boot --&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;parent&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;groupId&gt;</span>org.springframework.boot<span
+                  xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/groupId&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;artifactId&gt;</span>spring-boot-starter-parent<span
+                  xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/artifactId&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;version&gt;</span>2.1.6.RELEASE<span xmlns:d="http://docbook.org/ns/docbook"
+                  class="hl-tag">&lt;/version&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/parent&gt;</span>
+
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-comment">&lt;!-- Add typical dependencies for a web application --&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;dependencies&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;dependency&gt;</span>
+			<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;groupId&gt;</span>org.springframework.boot<span
+                  xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/groupId&gt;</span>
+			<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;artifactId&gt;</span>spring-boot-starter-web<span
+                  xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/artifactId&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/dependency&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/dependencies&gt;</span>
+
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-comment">&lt;!-- Package as an executable jar --&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;build&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;plugins&gt;</span>
+			<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;plugin&gt;</span>
+				<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;groupId&gt;</span>org.springframework.boot<span
+                  xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/groupId&gt;</span>
+				<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;artifactId&gt;</span>spring-boot-maven-plugin<span
+                  xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/artifactId&gt;</span>
+			<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/plugin&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/plugins&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/build&gt;</span>
+
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/project&gt;</span>
+            </pre>
+              <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+                <table border="0" summary="Tip">
+                  <tbody>
+                    <tr>
+                      <td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="img/manual/tip.png"></td>
+                      <th align="left">Tip</th>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top"><p>
+                          The
+                          <code class="literal">spring-boot-starter-parent</code>
+                          is a great way to use Spring Boot, but it might not be suitable all of the time. Sometimes you may need to inherit from a
+                          different parent POM, or you might not like our default settings. In those cases, see <a class="xref"
+                            href="#using-boot-maven-without-a-parent" title="13.2.2 Using Spring Boot without the Parent POM">Section&nbsp;13.2.2,
+                            “Using Spring Boot without the Parent POM”</a> for an alternative solution that uses an
+                          <code class="literal">import</code>
+                          scope.
+                        </p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-gradle-installation" href="#getting-started-gradle-installation"></a>10.1.2&nbsp;Gradle Installation
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Spring Boot is compatible with Gradle 4.4 and later. If you do not already have Gradle installed, you can follow the instructions at <a
+                  class="link" href="https://gradle.org/" target="_top">gradle.org</a>.
+              </p>
+              <p>
+                Spring Boot dependencies can be declared by using the
+                <code class="literal">org.springframework.boot</code>
+                <code class="literal">group</code>
+                . Typically, your project declares dependencies to one or more <a class="link" href="#using-boot-starter" title="13.5 Starters">“Starters”</a>.
+                Spring Boot provides a useful <a class="link" href="#build-tool-plugins-gradle-plugin" title="72. Spring Boot Gradle Plugin">Gradle
+                  plugin</a> that can be used to simplify dependency declarations and to create executable jars.
+              </p>
+              <div class="sidebar">
+                <div class="titlepage">
+                  <div>
+                    <div>
+                      <p class="title">
+                        <b>Gradle Wrapper</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  The Gradle Wrapper provides a nice way of “obtaining” Gradle when you need to build a project. It is a small script and library that
+                  you commit alongside your code to bootstrap the build process. See <a class="link"
+                    href="https://docs.gradle.org/4.2.1/userguide/gradle_wrapper.html" target="_top">docs.gradle.org/4.2.1/userguide/gradle_wrapper.html</a>
+                  for details.
+                </p>
+              </div>
+              <p>
+                More details on getting started with Spring Boot and Gradle can be found in the <a class="link"
+                  href="https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/gradle-plugin/reference/html/#getting-started" target="_top">Getting
+                  Started section</a> of the Gradle plugin’s reference guide.
+              </p>
+            </div>
+          </div>
+          <div class="section">
+            <div class="titlepage">
+              <div>
+                <div>
+                  <h2 class="title" style="clear: both">
+                    <a name="getting-started-installing-the-cli" href="#getting-started-installing-the-cli"></a>10.2&nbsp;Installing the Spring Boot
+                    CLI
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <p>
+              The Spring Boot CLI (Command Line Interface) is a command line tool that you can use to quickly prototype with Spring. It lets you run <a
+                class="link" href="http://groovy-lang.org/" target="_top">Groovy</a> scripts, which means that you have a familiar Java-like syntax
+              without so much boilerplate code.
+            </p>
+            <p>You do not need to use the CLI to work with Spring Boot, but it is definitely the quickest way to get a Spring application off the
+              ground.</p>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-manual-cli-installation" href="#getting-started-manual-cli-installation"></a>10.2.1&nbsp;Manual
+                      Installation
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>You can download the Spring CLI distribution from the Spring software repository:</p>
+              <div class="itemizedlist">
+                <ul class="itemizedlist" style="list-style-type: disc;">
+                  <li class="listitem"><a class="link"
+                    href="https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/2.1.6.RELEASE/spring-boot-cli-2.1.6.RELEASE-bin.zip"
+                    target="_top">spring-boot-cli-2.1.6.RELEASE-bin.zip</a></li>
+                  <li class="listitem"><a class="link"
+                    href="https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/2.1.6.RELEASE/spring-boot-cli-2.1.6.RELEASE-bin.tar.gz"
+                    target="_top">spring-boot-cli-2.1.6.RELEASE-bin.tar.gz</a></li>
+                </ul>
+              </div>
+              <p>
+                Cutting edge <a class="link" href="https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-cli/" target="_top">snapshot
+                  distributions</a> are also available.
+              </p>
+              <p>
+                Once downloaded, follow the <a class="link"
+                  href="https://raw.github.com/spring-projects/spring-boot/v2.1.6.RELEASE/spring-boot-project/spring-boot-cli/src/main/content/INSTALL.txt"
+                  target="_top">INSTALL.txt</a> instructions from the unpacked archive. In summary, there is a
+                <code class="literal">spring</code>
+                script (
+                <code class="literal">spring.bat</code>
+                for Windows) in a
+                <code class="literal">bin/</code>
+                directory in the
+                <code class="literal">.zip</code>
+                file. Alternatively, you can use
+                <code class="literal">java -jar</code>
+                with the
+                <code class="literal">.jar</code>
+                file (the script helps you to be sure that the classpath is set correctly).
+              </p>
+            </div>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-sdkman-cli-installation" href="#getting-started-sdkman-cli-installation"></a>10.2.2&nbsp;Installation
+                      with SDKMAN!
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>
+                SDKMAN! (The Software Development Kit Manager) can be used for managing multiple versions of various binary SDKs, including Groovy and
+                the Spring Boot CLI. Get SDKMAN! from <a class="link" href="https://sdkman.io/" target="_top">sdkman.io</a> and install Spring Boot by
+                using the following commands:
+              </p>
+              <pre class="screen">$ sdk install springboot
+$ spring --version
+Spring Boot v2.1.6.RELEASE</pre>
+              <p>If you develop features for the CLI and want easy access to the version you built, use the following commands:</p>
+              <pre class="screen">$ sdk install springboot dev /path/to/spring-boot/spring-boot-cli/target/spring-boot-cli-2.1.6.RELEASE-bin/spring-2.1.6.RELEASE/
+$ sdk default springboot dev
+$ spring --version
+Spring CLI v2.1.6.RELEASE</pre>
+              <p>
+                The preceding instructions install a local instance of
+                <code class="literal">spring</code>
+                called the
+                <code class="literal">dev</code>
+                instance. It points at your target build location, so every time you rebuild Spring Boot,
+                <code class="literal">spring</code>
+                is up-to-date.
+              </p>
+              <p>You can see it by running the following command:</p>
+              <pre class="screen">$ sdk ls springboot
+
+================================================================================
+Available Springboot Versions
+================================================================================
+&gt; + dev
+* 2.1.6.RELEASE
+
+================================================================================
++ - local version
+* - installed
+&gt; - currently in use
+================================================================================</pre>
+            </div>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-homebrew-cli-installation" href="#getting-started-homebrew-cli-installation"></a>10.2.3&nbsp;OSX
+                      Homebrew Installation
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>
+                If you are on a Mac and use <a class="link" href="https://brew.sh/" target="_top">Homebrew</a>, you can install the Spring Boot CLI by
+                using the following commands:
+              </p>
+              <pre class="screen">$ brew tap pivotal/tap
+$ brew install springboot</pre>
+              <p>
+                Homebrew installs
+                <code class="literal">spring</code>
+                to
+                <code class="literal">/usr/local/bin</code>
+                .
+              </p>
+              <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+                <table border="0" summary="Note">
+                  <tbody>
+                    <tr>
+                      <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="img/manual/note.png"></td>
+                      <th align="left">Note</th>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top"><p>
+                          If you do not see the formula, your installation of brew might be out-of-date. In that case, run
+                          <code class="literal">brew update</code>
+                          and try again.
+                        </p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-macports-cli-installation" href="#getting-started-macports-cli-installation"></a>10.2.4&nbsp;MacPorts
+                      Installation
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>
+                If you are on a Mac and use <a class="link" href="https://www.macports.org/" target="_top">MacPorts</a>, you can install the Spring
+                Boot CLI by using the following command:
+              </p>
+              <pre class="screen">$ sudo port install spring-boot-cli</pre>
+            </div>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-cli-command-line-completion" href="#getting-started-cli-command-line-completion"></a>10.2.5&nbsp;Command-line
+                      Completion
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The Spring Boot CLI includes scripts that provide command completion for the <a class="link"
+                  href="https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29" target="_top">BASH</a> and <a class="link"
+                  href="https://en.wikipedia.org/wiki/Z_shell" target="_top">zsh</a> shells. You can
+                <code class="literal">source</code>
+                the script (also named
+                <code class="literal">spring</code>
+                ) in any shell or put it in your personal or system-wide bash completion initialization. On a Debian system, the system-wide scripts
+                are in
+                <code class="literal">/shell-completion/bash</code>
+                and all scripts in that directory are executed when a new shell starts. For example, to run the script manually if you have installed
+                by using SDKMAN!, use the following commands:
+              </p>
+              <pre class="screen">$ . ~/.sdkman/candidates/springboot/current/shell-completion/bash/spring
+$ spring &lt;HIT TAB HERE&gt;
+  grab  help  jar  run  test  version</pre>
+              <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+                <table border="0" summary="Note">
+                  <tbody>
+                    <tr>
+                      <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="img/manual/note.png"></td>
+                      <th align="left">Note</th>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top"><p>If you install the Spring Boot CLI by using Homebrew or MacPorts, the command-line
+                          completion scripts are automatically registered with your shell.</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-scoop-cli-installation" href="#getting-started-scoop-cli-installation"></a>10.2.6&nbsp;Windows Scoop
+                      Installation
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>
+                If you are on a Windows and use <a class="link" href="https://scoop.sh/" target="_top">Scoop</a>, you can install the Spring Boot CLI
+                by using the following commands:
+              </p>
+              <pre class="screen">&gt; scoop bucket add extras
+&gt; scoop install springboot</pre>
+              <p>
+                Scoop installs
+                <code class="literal">spring</code>
+                to
+                <code class="literal">~/scoop/apps/springboot/current/bin</code>
+                .
+              </p>
+              <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+                <table border="0" summary="Note">
+                  <tbody>
+                    <tr>
+                      <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="img/manual/note.png"></td>
+                      <th align="left">Note</th>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top"><p>
+                          If you do not see the app manifest, your installation of scoop might be out-of-date. In that case, run
+                          <code class="literal">scoop update</code>
+                          and try again.
+                        </p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-cli-example" href="#getting-started-cli-example"></a>10.2.7&nbsp;Quick-start Spring CLI Example
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>
+                You can use the following web application to test your installation. To start, create a file called
+                <code class="literal">app.groovy</code>
+                , as follows:
+              </p>
+              <pre class="programlisting">
+              <em><span class="hl-annotation" style="color: gray">@RestController</span></em>
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-keyword">class</span> ThisWillActuallyRun {
+
+	<em><span class="hl-annotation" style="color: gray">@RequestMapping("/")</span></em>
+	String home() {
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-string">"Hello World!"</span>
+	}
+
+}</pre>
+              <p>Then run it from a shell, as follows:</p>
+              <pre class="screen">$ spring run app.groovy</pre>
+              <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+                <table border="0" summary="Note">
+                  <tbody>
+                    <tr>
+                      <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="img/manual/note.png"></td>
+                      <th align="left">Note</th>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top"><p>The first run of your application is slow, as dependencies are downloaded. Subsequent
+                          runs are much quicker.</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                Open
+                <code class="literal">
+                  <a class="link" href="http://localhost:8080/" target="_top">localhost:8080</a>
+                </code>
+                in your favorite web browser. You should see the following output:
+              </p>
+              <pre class="screen">Hello World!</pre>
+            </div>
+          </div>
+          <div class="section">
+            <div class="titlepage">
+              <div>
+                <div>
+                  <h2 class="title" style="clear: both">
+                    <a name="getting-started-upgrading-from-an-earlier-version" href="#getting-started-upgrading-from-an-earlier-version"></a>10.3&nbsp;Upgrading
+                    from an Earlier Version of Spring Boot
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <p>
+              If you are upgrading from an earlier release of Spring Boot, check the <a class="link"
+                href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Migration-Guide" target="_top">“migration guide” on the
+                project wiki</a> that provides detailed upgrade instructions. Check also the <a class="link"
+                href="https://github.com/spring-projects/spring-boot/wiki" target="_top">“release notes”</a> for a list of “new and noteworthy”
+              features for each release.
+            </p>
+            <p>When upgrading to a new feature release, some properties may have been renamed or removed. Spring Boot provides a way to analyze
+              your application’s environment and print diagnostics at startup, but also temporarily migrate properties at runtime for you. To enable
+              that feature, add the following dependency to your project:</p>
+            <pre class="programlisting">
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;dependency&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;groupId&gt;</span>org.springframework.boot<span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/groupId&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;artifactId&gt;</span>spring-boot-properties-migrator<span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/artifactId&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;scope&gt;</span>runtime<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/scope&gt;</span>
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/dependency&gt;</span>
+          </pre>
+            <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+              <table border="0" summary="Warning">
+                <tbody>
+                  <tr>
+                    <td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="img/manual/warning.png"></td>
+                    <th align="left">Warning</th>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><p>
+                        Properties that are added late to the environment, such as when using
+                        <code class="literal">@PropertySource</code>
+                        , will not be taken into account.
+                      </p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+              <table border="0" summary="Note">
+                <tbody>
+                  <tr>
+                    <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="img/manual/note.png"></td>
+                    <th align="left">Note</th>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><p>Once you’re done with the migration, please make sure to remove this module from your
+                        project’s dependencies.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              To upgrade an existing CLI installation, use the appropriate package manager command (for example,
+              <code class="literal">brew upgrade</code>
+              ) or, if you manually installed the CLI, follow the <a class="link" href="#getting-started-manual-cli-installation"
+                title="10.2.1 Manual Installation">standard instructions</a>, remembering to update your
+              <code class="literal">PATH</code>
+              environment variable to remove any older references.
+            </p>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="getting-started-first-application" href="#getting-started-first-application"></a>11.&nbsp;Developing Your First Spring Boot
+                  Application
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>This section describes how to develop a simple “Hello World!” web application that highlights some of Spring Boot’s key features. We
+            use Maven to build this project, since most IDEs support it.</p>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tbody>
+                <tr>
+                  <td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="img/manual/tip.png"></td>
+                  <th align="left">Tip</th>
+                </tr>
+                <tr>
+                  <td align="left" valign="top"><p>
+                      The <a class="link" href="https://spring.io/" target="_top">spring.io</a> web site contains many “Getting Started” <a
+                        class="link" href="https://spring.io/guides" target="_top">guides</a> that use Spring Boot. If you need to solve a specific
+                      problem, check there first.
+                    </p>
+                    <p>
+                      You can shortcut the steps below by going to <a class="link" href="https://start.spring.io/" target="_top">start.spring.io</a>
+                      and choosing the "Web" starter from the dependencies searcher. Doing so generates a new project structure so that you can <a
+                        class="link" href="#getting-started-first-application-code" title="11.3 Writing the Code">start coding right away</a>. Check
+                      the <a class="link" href="https://docs.spring.io/initializr/docs/current/reference/html/#user-guide" target="_top">Spring
+                        Initializr documentation</a> for more details.
+                    </p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Before we begin, open a terminal and run the following commands to ensure that you have valid versions of Java and Maven installed:</p>
+          <pre class="screen">$ java -version
+java version "1.8.0_102"
+Java(TM) SE Runtime Environment (build 1.8.0_102-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.102-b14, mixed mode)</pre>
+          <pre class="screen">$ mvn -v
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T14:33:14-04:00)
+Maven home: /usr/local/Cellar/maven/3.3.9/libexec
+Java version: 1.8.0_102, vendor: Oracle Corporation</pre>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tbody>
+                <tr>
+                  <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="img/manual/note.png"></td>
+                  <th align="left">Note</th>
+                </tr>
+                <tr>
+                  <td align="left" valign="top"><p>This sample needs to be created in its own folder. Subsequent instructions assume that you
+                      have created a suitable folder and that it is your current directory.</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="section">
+            <div class="titlepage">
+              <div>
+                <div>
+                  <h2 class="title" style="clear: both">
+                    <a name="getting-started-first-application-pom" href="#getting-started-first-application-pom"></a>11.1&nbsp;Creating the POM
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <p>
+              We need to start by creating a Maven
+              <code class="literal">pom.xml</code>
+              file. The
+              <code class="literal">pom.xml</code>
+              is the recipe that is used to build your project. Open your favorite text editor and add the following:
+            </p>
+            <pre class="programlisting">
+            <span class="hl-directive" style="color: maroon">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;project</span> <span xmlns:d="http://docbook.org/ns/docbook" class="hl-attribute">xmlns</span>=<span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-value">"http://maven.apache.org/POM/4.0.0"</span> <span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-attribute">xmlns:xsi</span>=<span xmlns:d="http://docbook.org/ns/docbook"
+                class="hl-value">"http://www.w3.org/2001/XMLSchema-instance"</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-attribute">xsi:schemaLocation</span>=<span xmlns:d="http://docbook.org/ns/docbook"
+                class="hl-value">"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"</span><span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;modelVersion&gt;</span>4.0.0<span xmlns:d="http://docbook.org/ns/docbook"
+                class="hl-tag">&lt;/modelVersion&gt;</span>
+
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;groupId&gt;</span>com.example<span xmlns:d="http://docbook.org/ns/docbook"
+                class="hl-tag">&lt;/groupId&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;artifactId&gt;</span>myproject<span xmlns:d="http://docbook.org/ns/docbook"
+                class="hl-tag">&lt;/artifactId&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;version&gt;</span>0.0.1-SNAPSHOT<span xmlns:d="http://docbook.org/ns/docbook"
+                class="hl-tag">&lt;/version&gt;</span>
+
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;parent&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;groupId&gt;</span>org.springframework.boot<span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/groupId&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;artifactId&gt;</span>spring-boot-starter-parent<span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/artifactId&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;version&gt;</span>2.1.6.RELEASE<span xmlns:d="http://docbook.org/ns/docbook"
+                class="hl-tag">&lt;/version&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/parent&gt;</span>
+
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-comment">&lt;!-- Additional lines to be added here... --&gt;</span>
+
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/project&gt;</span>
+          </pre>
+            <p>
+              The preceding listing should give you a working build. You can test it by running
+              <code class="literal">mvn package</code>
+              (for now, you can ignore the “jar will be empty - no content was marked for inclusion!” warning).
+            </p>
+            <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+              <table border="0" summary="Note">
+                <tbody>
+                  <tr>
+                    <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="img/manual/note.png"></td>
+                    <th align="left">Note</th>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><p>At this point, you could import the project into an IDE (most modern Java IDEs include
+                        built-in support for Maven). For simplicity, we continue to use a plain text editor for this example.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="section">
+            <div class="titlepage">
+              <div>
+                <div>
+                  <h2 class="title" style="clear: both">
+                    <a name="getting-started-first-application-dependencies" href="#getting-started-first-application-dependencies"></a>11.2&nbsp;Adding
+                    Classpath Dependencies
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <p>
+              Spring Boot provides a number of “Starters” that let you add jars to your classpath. Our sample application has already used
+              <code class="literal">spring-boot-starter-parent</code>
+              in the
+              <code class="literal">parent</code>
+              section of the POM. The
+              <code class="literal">spring-boot-starter-parent</code>
+              is a special starter that provides useful Maven defaults. It also provides a <a class="link" href="#using-boot-dependency-management"
+                title="13.1 Dependency Management"><code class="literal">dependency-management</code></a> section so that you can omit
+              <code class="literal">version</code>
+              tags for “blessed” dependencies.
+            </p>
+            <p>
+              Other “Starters” provide dependencies that you are likely to need when developing a specific type of application. Since we are
+              developing a web application, we add a
+              <code class="literal">spring-boot-starter-web</code>
+              dependency. Before that, we can look at what we currently have by running the following command:
+            </p>
+            <pre class="screen">$ mvn dependency:tree
+
+[INFO] com.example:myproject:jar:0.0.1-SNAPSHOT</pre>
+            <p>
+              The
+              <code class="literal">mvn dependency:tree</code>
+              command prints a tree representation of your project dependencies. You can see that
+              <code class="literal">spring-boot-starter-parent</code>
+              provides no dependencies by itself. To add the necessary dependencies, edit your
+              <code class="literal">pom.xml</code>
+              and add the
+              <code class="literal">spring-boot-starter-web</code>
+              dependency immediately below the
+              <code class="literal">parent</code>
+              section:
+            </p>
+            <pre class="programlisting">
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;dependencies&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;dependency&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;groupId&gt;</span>org.springframework.boot<span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/groupId&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;artifactId&gt;</span>spring-boot-starter-web<span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/artifactId&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/dependency&gt;</span>
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/dependencies&gt;</span>
+          </pre>
+            <p>
+              If you run
+              <code class="literal">mvn dependency:tree</code>
+              again, you see that there are now a number of additional dependencies, including the Tomcat web server and Spring Boot itself.
+            </p>
+          </div>
+          <div class="section">
+            <div class="titlepage">
+              <div>
+                <div>
+                  <h2 class="title" style="clear: both">
+                    <a name="getting-started-first-application-code" href="#getting-started-first-application-code"></a>11.3&nbsp;Writing the Code
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <p>
+              To finish our application, we need to create a single Java file. By default, Maven compiles sources from
+              <code class="literal">src/main/java</code>
+              , so you need to create that folder structure and then add a file named
+              <code class="literal">src/main/java/Example.java</code>
+              to contain the following code:
+            </p>
+            <pre class="programlisting">
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-keyword">import</span> org.springframework.boot.*;
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-keyword">import</span> org.springframework.boot.autoconfigure.*;
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-keyword">import</span> org.springframework.web.bind.annotation.*;
+
+<em><span class="hl-annotation" style="color: gray">@RestController</span></em>
+<em><span class="hl-annotation" style="color: gray">@EnableAutoConfiguration</span></em>
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-keyword">public</span> <span xmlns:d="http://docbook.org/ns/docbook" class="hl-keyword">class</span> Example {
+
+	<em><span class="hl-annotation" style="color: gray">@RequestMapping("/")</span></em>
+	String home() {
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-keyword">return</span> <span xmlns:d="http://docbook.org/ns/docbook" class="hl-string">"Hello World!"</span>;
+	}
+
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-keyword">public</span> <span xmlns:d="http://docbook.org/ns/docbook" class="hl-keyword">static</span> <span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-keyword">void</span> main(String[] args) {
+		SpringApplication.run(Example.<span xmlns:d="http://docbook.org/ns/docbook" class="hl-keyword">class</span>, args);
+	}
+
+}</pre>
+            <p>Although there is not much code here, quite a lot is going on. We step through the important parts in the next few sections.</p>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-first-application-annotations" href="#getting-started-first-application-annotations"></a>11.3.1&nbsp;The
+                      @RestController and @RequestMapping Annotations
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The first annotation on our
+                <code class="literal">Example</code>
+                class is
+                <code class="literal">@RestController</code>
+                . This is known as a <span class="emphasis"><em>stereotype</em></span> annotation. It provides hints for people reading the code and
+                for Spring that the class plays a specific role. In this case, our class is a web
+                <code class="literal">@Controller</code>
+                , so Spring considers it when handling incoming web requests.
+              </p>
+              <p>
+                The
+                <code class="literal">@RequestMapping</code>
+                annotation provides “routing” information. It tells Spring that any HTTP request with the
+                <code class="literal">/</code>
+                path should be mapped to the
+                <code class="literal">home</code>
+                method. The
+                <code class="literal">@RestController</code>
+                annotation tells Spring to render the resulting string directly back to the caller.
+              </p>
+              <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+                <table border="0" summary="Tip">
+                  <tbody>
+                    <tr>
+                      <td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="img/manual/tip.png"></td>
+                      <th align="left">Tip</th>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top"><p>
+                          The
+                          <code class="literal">@RestController</code>
+                          and
+                          <code class="literal">@RequestMapping</code>
+                          annotations are Spring MVC annotations. (They are not specific to Spring Boot.) See the <a class="link"
+                            href="https://docs.spring.io/spring/docs/5.1.8.RELEASE/spring-framework-reference/web.html#mvc" target="_top">MVC
+                            section</a> in the Spring Reference Documentation for more details.
+                        </p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-first-application-auto-configuration" href="#getting-started-first-application-auto-configuration"></a>11.3.2&nbsp;The
+                      @EnableAutoConfiguration Annotation
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The second class-level annotation is
+                <code class="literal">@EnableAutoConfiguration</code>
+                . This annotation tells Spring Boot to “guess” how you want to configure Spring, based on the jar dependencies that you have added.
+                Since
+                <code class="literal">spring-boot-starter-web</code>
+                added Tomcat and Spring MVC, the auto-configuration assumes that you are developing a web application and sets up Spring accordingly.
+              </p>
+              <div class="sidebar">
+                <div class="titlepage">
+                  <div>
+                    <div>
+                      <p class="title">
+                        <b>Starters and Auto-configuration</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p>Auto-configuration is designed to work well with “Starters”, but the two concepts are not directly tied. You are free to pick
+                  and choose jar dependencies outside of the starters. Spring Boot still does its best to auto-configure your application.</p>
+              </div>
+            </div>
+            <div class="section">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <h3 class="title">
+                      <a name="getting-started-first-application-main-method" href="#getting-started-first-application-main-method"></a>11.3.3&nbsp;The
+                      “main” Method
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The final part of our application is the
+                <code class="literal">main</code>
+                method. This is just a standard method that follows the Java convention for an application entry point. Our main method delegates to
+                Spring Boot’s
+                <code class="literal">SpringApplication</code>
+                class by calling
+                <code class="literal">run</code>
+                .
+                <code class="literal">SpringApplication</code>
+                bootstraps our application, starting Spring, which, in turn, starts the auto-configured Tomcat web server. We need to pass
+                <code class="literal">Example.class</code>
+                as an argument to the
+                <code class="literal">run</code>
+                method to tell
+                <code class="literal">SpringApplication</code>
+                which is the primary Spring component. The
+                <code class="literal">args</code>
+                array is also passed through to expose any command-line arguments.
+              </p>
+            </div>
+          </div>
+          <div class="section">
+            <div class="titlepage">
+              <div>
+                <div>
+                  <h2 class="title" style="clear: both">
+                    <a name="getting-started-first-application-run" href="#getting-started-first-application-run"></a>11.4&nbsp;Running the Example
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <p>
+              At this point, your application should work. Since you used the
+              <code class="literal">spring-boot-starter-parent</code>
+              POM, you have a useful
+              <code class="literal">run</code>
+              goal that you can use to start the application. Type
+              <code class="literal">mvn spring-boot:run</code>
+              from the root project directory to start the application. You should see output similar to the following:
+            </p>
+            <pre class="screen">$ mvn spring-boot:run
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v2.1.6.RELEASE)
+....... . . .
+....... . . . (log output here)
+....... . . .
+........ Started Example in 2.222 seconds (JVM running for 6.514)</pre>
+            <p>
+              If you open a web browser to
+              <code class="literal">
+                <a class="link" href="http://localhost:8080/" target="_top">localhost:8080</a>
+              </code>
+              , you should see the following output:
+            </p>
+            <pre class="screen">Hello World!</pre>
+            <p>
+              To gracefully exit the application, press
+              <code class="literal">ctrl-c</code>
+              .
+            </p>
+          </div>
+          <div class="section">
+            <div class="titlepage">
+              <div>
+                <div>
+                  <h2 class="title" style="clear: both">
+                    <a name="getting-started-first-application-executable-jar" href="#getting-started-first-application-executable-jar"></a>11.5&nbsp;Creating
+                    an Executable Jar
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <p>We finish our example by creating a completely self-contained executable jar file that we could run in production. Executable jars
+              (sometimes called “fat jars”) are archives containing your compiled classes along with all of the jar dependencies that your code needs
+              to run.</p>
+            <div class="sidebar">
+              <div class="titlepage">
+                <div>
+                  <div>
+                    <p class="title">
+                      <b>Executable jars and Java</b>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p>Java does not provide a standard way to load nested jar files (jar files that are themselves contained within a jar). This can be
+                problematic if you are looking to distribute a self-contained application.</p>
+              <p>To solve this problem, many developers use “uber” jars. An uber jar packages all the classes from all the application’s
+                dependencies into a single archive. The problem with this approach is that it becomes hard to see which libraries are in your
+                application. It can also be problematic if the same filename is used (but with different content) in multiple jars.</p>
+              <p>
+                Spring Boot takes a <a class="link" href="#executable-jar" title="Appendix E. The Executable Jar Format">different approach</a> and
+                lets you actually nest jars directly.
+              </p>
+            </div>
+            <p>
+              To create an executable jar, we need to add the
+              <code class="literal">spring-boot-maven-plugin</code>
+              to our
+              <code class="literal">pom.xml</code>
+              . To do so, insert the following lines just below the
+              <code class="literal">dependencies</code>
+              section:
+            </p>
+            <pre class="programlisting">
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;build&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;plugins&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;plugin&gt;</span>
+			<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;groupId&gt;</span>org.springframework.boot<span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/groupId&gt;</span>
+			<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;artifactId&gt;</span>spring-boot-maven-plugin<span
+                xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/artifactId&gt;</span>
+		<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/plugin&gt;</span>
+	<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/plugins&gt;</span>
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/build&gt;</span>
+          </pre>
+            <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+              <table border="0" summary="Note">
+                <tbody>
+                  <tr>
+                    <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="img/manual/note.png"></td>
+                    <th align="left">Note</th>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><p>
+                        The
+                        <code class="literal">spring-boot-starter-parent</code>
+                        POM includes
+                        <code class="literal">&lt;executions&gt;</code>
+                        configuration to bind the
+                        <code class="literal">repackage</code>
+                        goal. If you do not use the parent POM, you need to declare this configuration yourself. See the <a class="link"
+                          href="https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/maven-plugin/usage.html" target="_top">plugin documentation</a>
+                        for details.
+                      </p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Save your
+              <code class="literal">pom.xml</code>
+              and run
+              <code class="literal">mvn package</code>
+              from the command line, as follows:
+            </p>
+            <pre class="screen">$ mvn package
+
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building myproject 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] .... ..
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myproject ---
+[INFO] Building jar: /Users/developer/example/spring-boot-example/target/myproject-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.1.6.RELEASE:repackage (default) @ myproject ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------</pre>
+            <p>
+              If you look in the
+              <code class="literal">target</code>
+              directory, you should see
+              <code class="literal">myproject-0.0.1-SNAPSHOT.jar</code>
+              . The file should be around 10 MB in size. If you want to peek inside, you can use
+              <code class="literal">jar tvf</code>
+              , as follows:
+            </p>
+            <pre class="screen">$ jar tvf target/myproject-0.0.1-SNAPSHOT.jar</pre>
+            <p>
+              You should also see a much smaller file named
+              <code class="literal">myproject-0.0.1-SNAPSHOT.jar.original</code>
+              in the
+              <code class="literal">target</code>
+              directory. This is the original jar file that Maven created before it was repackaged by Spring Boot.
+            </p>
+            <p>
+              To run that application, use the
+              <code class="literal">java -jar</code>
+              command, as follows:
+            </p>
+            <pre class="screen">$ java -jar target/myproject-0.0.1-SNAPSHOT.jar
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v2.1.6.RELEASE)
+....... . . .
+....... . . . (log output here)
+....... . . .
+........ Started Example in 2.536 seconds (JVM running for 2.864)</pre>
+            <p>
+              As before, to exit the application, press
+              <code class="literal">ctrl-c</code>
+              .
+            </p>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h2 class="title">
+                  <a name="getting-started-whats-next" href="#getting-started-whats-next"></a>12.&nbsp;What to Read Next
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>
+            Hopefully, this section provided some of the Spring Boot basics and got you on your way to writing your own applications. If you are a
+            task-oriented type of developer, you might want to jump over to <a class="link" href="https://spring.io/" target="_top">spring.io</a> and
+            check out some of the <a class="link" href="https://spring.io/guides/" target="_top">getting started</a> guides that solve specific “How
+            do I do that with Spring?” problems. We also have Spring Boot-specific “<a class="link" href="#howto" title="Part IX. ‘How-to’ guides">How-to</a>”
+            reference documentation.
+          </p>
+          <p>
+            The <a class="link" href="https://github.com/spring-projects/spring-boot" target="_top">Spring Boot repository</a> also has a <a
+              class="link" href="https://github.com/spring-projects/spring-boot/tree/v2.1.6.RELEASE/spring-boot-samples" target="_top">bunch of
+              samples</a> you can run. The samples are independent of the rest of the code (that is, you do not need to build the rest to run or use the
+            samples).
+          </p>
+          <p>
+            Otherwise, the next logical step is to read <span class="emphasis"><em><a class="xref" href="#using-boot"
+                title="Part III. Using Spring Boot">Part&nbsp;III, “Using Spring Boot”</a></em></span>. If you are really impatient, you could also jump ahead and
+            read about <span class="emphasis"><em><a class="link" href="#boot-features" title="Part IV. Spring Boot features">Spring
+                  Boot features</a></em></span>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3>
+      Any thoughts to share with me? <a href="mailto:lchenaction@gmail.com?subject=A Lifelong Investor's Manual (US Market)&body=Hi,">Send email</a>.
+    </h3>
+</body>
+</html>
