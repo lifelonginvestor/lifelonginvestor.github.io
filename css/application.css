@@ -72,6 +72,10 @@ a:hover {
   vertical-align: top;
 }
 
+.title {
+  margin-top: 50px;
+}
+
 .announce {
   margin-left: 20px;
 }
