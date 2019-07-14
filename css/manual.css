@@ -351,7 +351,7 @@ p.chart {
 }
 
 p.chart .photo {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 p.chart span.zoom {
@@ -395,5 +395,6 @@ p.chart span.title {
 
 p.chart span.title img {
   width: 24px;
+  height: 24px;
   margin-right: 5px;
 }
