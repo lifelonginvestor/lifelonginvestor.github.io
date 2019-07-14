@@ -58,6 +58,7 @@ h1, h2, h3 {
 
 h1 {
   margin: 40px 0 20px;
+  padding-top: 20px;
 }
 
 div.part h1 {
@@ -147,7 +148,8 @@ div.table table, div.informaltable table {
 
 div.table td {
   padding-left: 7px;
-  padding-right: 7px
+  padding-right: 7px;
+  border: 1px solid #ccc;
 }
 
 .sidebar {
@@ -183,7 +185,7 @@ table {
   line-height: 1.6
 }
 
-table thead {
+table thead, table colgroup col.head {
   background: #f5f5f5
 }
 
@@ -198,7 +200,7 @@ table th {
 
 table th, table td {
   border: none !important;
-  padding: 6px 13px
+  padding: 6px 13px;
 }
 
 table tr:nth-child(2n) {
@@ -312,6 +314,10 @@ div.navfooter {
   border-top: 1px solid #ccc
 }
 
+div.references {
+  margin-top: 30px;
+}
+
 .title {
   margin-left: -1em;
   padding-left: 1em
@@ -338,4 +344,23 @@ div.navfooter {
 
 .title:focus>a, .title>a:focus, .title:focus>a:focus {
   outline: 0
+}
+
+p.chart {
+  text-align: center;
+}
+
+p.chart img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+p.chart span {
+  color: #333;
+  vertical-align: top;
+}
+
+p.chart span img {
+  width: 24px;
+  margin-right: 5px;
 }
