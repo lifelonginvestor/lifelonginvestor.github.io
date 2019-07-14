@@ -36,8 +36,13 @@
 <link rel="stylesheet" type="text/css" href="css/manual.css">
 <!-- javascripts -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/jquery.zoom.min.js"></script>
 <script type="text/javascript" charset="utf-8">
-  
+  $(document).ready(function() {
+    $('#spy-daily-30yrs').zoom({
+      on : 'grab'
+    });
+  });
 </script>
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -106,8 +111,10 @@
           years performance and recall the movements of market: peacefully, monumentally, insanely, and fiercely; meanwhile, consolidate what you
           should grasp: Dos and Dont's?</p>
         <p class="chart">
-          <img alt="S&P 500 Index 30 Years Performance" src="img/charts/s&p500-1989-2019-daily.png"> <span><img
-            src="img/manual/bloomberg-terminal.png">Bloomberg Terminal</span>
+          <span class="photo zoom" id="spy-daily-30yrs"> <img width="100%" alt="S&P 500 Index 30 Years Performance"
+            src="img/charts/s&p500-1989-2019-daily.png"> <i>Grab</i></span> <span class="title"> <img src="img/manual/bloomberg-terminal.png">S&P
+            500 Index 30 Years Performance - Bloomberg Terminal
+          </span>
         </p>
         <div class="table-contents">
           <table class="table">

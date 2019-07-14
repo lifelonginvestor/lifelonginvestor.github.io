@@ -350,17 +350,50 @@ p.chart {
   text-align: center;
 }
 
-p.chart img {
-  width: 100%;
+p.chart .photo {
   margin-bottom: 5px;
 }
 
-p.chart span {
+p.chart span.zoom {
+  display: inline-block;
+  position: relative;
+}
+
+p.chart span.zoom img {
+  display: block;
+}
+
+p.chart span.zoom img::selection {
+  background-color: transparent;
+}
+
+/* magnifying glass icon */
+p.chart span.zoom:after {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/manual/magnifier.png);
+}
+
+/* magnifying glass hint */
+p.chart span.zoom i {
+  top: 3px;
+  right: 28px;
+  color: #555;
+  font: bold 12px;
+  position: absolute;
+}
+
+p.chart span.title {
   color: #333;
   vertical-align: top;
 }
 
-p.chart span img {
+p.chart span.title img {
   width: 24px;
   margin-right: 5px;
 }
