@@ -318,6 +318,18 @@ div.references {
   margin-top: 30px;
 }
 
+div.references .fund {
+  color: blue;
+}
+
+div.references .stock {
+  color: orange;
+}
+
+div.references .wealth {
+  color: green;
+}
+
 .title {
   margin-left: -1em;
   padding-left: 1em
