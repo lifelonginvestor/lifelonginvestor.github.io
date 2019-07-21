@@ -185,8 +185,8 @@ table {
   line-height: 1.6
 }
 
-table thead, table colgroup col.head {
-  background: #f5f5f5
+table thead {
+  background: #ddd;
 }
 
 table tr {
