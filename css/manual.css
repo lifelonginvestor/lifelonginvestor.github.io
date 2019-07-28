@@ -161,7 +161,24 @@ div.table td {
 }
 
 .sidebar p.title {
-  color: #6d180b
+  color: #6d180b;
+  margin-top: 20px;
+}
+
+.readnote {
+  line-height: 1.4;
+  padding: 0 20px;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 3px 3px 3px 3px;
+  background-color: #f8f8f8;
+}
+
+.readnote p.title {
+  color: #6d180b;
+  font-weight: 700;
+  margin-top: 20px;
 }
 
 pre.programlisting, pre.screen {
