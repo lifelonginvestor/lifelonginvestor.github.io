@@ -1,5 +1,3 @@
-# lifelonginvestment.github.io
-
-Lifelong Investor Website
+# Lifelong Investor Website
  
 
